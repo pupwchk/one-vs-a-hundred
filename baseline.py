@@ -4,7 +4,7 @@ from typing import List, Dict, TypedDict
 from openai import OpenAI
 from dotenv import load_dotenv
 
-# .env 파일에서 환경 변수 로드 (OPENAI_API_KEY="sk-...")
+# .env 파일에서 환경 변수 로드 (API 저장 변수 = OPENROUTER_API_KEY)
 load_dotenv()
 
 # --- 응답 형식 정의 ---
@@ -25,14 +25,14 @@ def create_stock_prompt(stock_data: str) -> str:
 
 # --- 에이전트 설계 ---
 class BaseModelAgent(ABC):
-    """모든 에이전트의 기본 설계도 (추상 클래스)"""
     @abstractmethod
     def predict(self, stock_data: str) -> AgentPrediction:
         pass
 
 class OpenAIAgent(BaseModelAgent):
-    """OpenAI API를 사용하는 표준 에이전트"""
-    # 기본값 설정: 에러 발생 시 반환할 안전한 값
+    """OpenRouter를 통해 API를 사용하는 표준 에이전트"""
+    # 기본값 설정: 에러 발생 시 반환할 안전한 값 
+    # 기댓값은 평균으로 설정하도록 수정 필요할듯 (오류 개수 카운트 하고, 해당 라벨의 기댓값 평균으로 설정)
     DEFAULT_PREDICTION: AgentPrediction = {"decision": "hold", "confidence": 50}
 
     def __init__(self, model_name: str, client: OpenAI):
@@ -47,14 +47,15 @@ class OpenAIAgent(BaseModelAgent):
                 messages=[{"role": "user", "content": prompt}],
                 response_format={"type": "json_object"}, # JSON 응답 모드 활성화
                 max_tokens=50,
-                temperature=0.5,
+                temperature=0.5, # ??
             )
             # JSON 파싱
             import json
             result = json.loads(response.choices[0].message.content)
             return AgentPrediction(decision=result["decision"], confidence=result["confidence"])
         except Exception as e:
-            print(f"Error during prediction for model {self.model_name}: {e}")
+            # OpenRouter 사용 시 모델명을 함께 출력
+            print(f"Error during prediction for model '{self.model_name}': {e}")
             return self.DEFAULT_PREDICTION
 
 # --- 예측 시스템 ---
@@ -82,29 +83,43 @@ class StockPredictor:
 
 
 if __name__ == "__main__":
-    # 1. API 클라이언트 초기화
-    # .env 파일의 OPENAI_API_KEY를 자동으로 읽어옵니다.
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    # --- 1. OpenRouter API 클라이언트 초기화 (가이드라인 적용) ---
+    # 사이트 URL과 앱 이름을 헤더에 추가하여 OpenRouter 대시보드에서 요청을 식별합니다.
+    YOUR_SITE_URL = "http://localhost:8000"  # 로컬 테스트 URL 또는 실제 앱 주소
+    YOUR_APP_NAME = "AI Stock Predictor"      # 프로젝트 이름
 
-    # 2. 에이전트 생성
-    # 전문가 에이전트 (고성능 모델 사용)
-    expert_agent = OpenAIAgent(model_name="gpt-5", client=client)
+    client = OpenAI(
+        base_url = "https://openrouter.ai/api/v1",
+        api_key = os.getenv("OPENROUTER_API_KEY"),
+        default_headers = {                   
+            "HTTP-Referer": YOUR_SITE_URL,
+            "X-Title": YOUR_APP_NAME,
+        },
+    )
 
-    # 대중 에이전트 100명 (경량 모델 사용)
+    
+    # 전문가 에이전트 - GPT-5
+    EXPERT_MODEL = "openai/gpt-5"
+    expert_agent = OpenAIAgent(model_name=EXPERT_MODEL, client=client)
+
+    # 대중 에이전트 - GPT-5-nano
+    CROWD_MODEL = "openai/gpt-5-nano"
+    NUM_CROWD_AGENTS = 5 # 대중 에이전트 수 설정
+
     crowd_agents = [
-        OpenAIAgent(model_name="gpt-5-nano", client=client) for _ in range(100)
+        OpenAIAgent(model_name=CROWD_MODEL, client=client) for _ in range(NUM_CROWD_AGENTS)
     ]
 
-    # 3. 예측 시스템 실행
+    # --- 3. 예측 시스템 실행 ---
     predictor = StockPredictor(expert_agent, crowd_agents)
-    stock_data = "제공할 데이터를 넣어주세요"
+    stock_data = "문자열 or .csv"
     
     result = predictor.predict(stock_data)
 
     print(f"--- 최종 예측 결과 ---")
-    print(f"전문가 의견: {result['expert_prediction']}")
+    print(f"전문가 의견 ({expert_agent.model_name}): {result['expert_prediction']}")
     print(f"매수 신뢰도 총합: {result['buy_confidence_sum']}")
     print(f"보류 신뢰도 총합: {result['hold_confidence_sum']}")
     print(f"최종 결정: {result['final_decision'].upper()}")
     print("-" * 25)
-    print(f"참고: 소형 모델 결과 (5개 샘플): {result['crowd_predictions'][:5]}")
+    print(f"참고: 소형 모델({CROWD_MODEL}) 결과 (5개 샘플): {result['crowd_predictions'][:5]}")
