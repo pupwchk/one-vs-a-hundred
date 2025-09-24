@@ -9,8 +9,8 @@ load_dotenv()
 
 # --- 응답 형식 정의 ---
 class AgentPrediction(TypedDict):
-    decision: str
-    confidence: int
+    decision: str # 살지 말지
+    confidence: int # 신뢰도
 
 # --- 프롬프트 생성 함수 ---
 def create_stock_prompt(stock_data: str) -> str:
@@ -104,7 +104,7 @@ if __name__ == "__main__":
 
     # 대중 에이전트 - GPT-5-nano
     CROWD_MODEL = "openai/gpt-5-nano"
-    NUM_CROWD_AGENTS = 5 # 대중 에이전트 수 설정
+    NUM_CROWD_AGENTS = 3 # 대중 에이전트 수 설정
 
     crowd_agents = [
         OpenAIAgent(model_name=CROWD_MODEL, client=client) for _ in range(NUM_CROWD_AGENTS)
