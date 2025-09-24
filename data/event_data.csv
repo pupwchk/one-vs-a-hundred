@@ -1,0 +1,161 @@
+Date,Symbol,Name,Sector
+2025-04-09,AAPL,Apple Inc.,Information Technology
+2024-03-15,ADBE,Adobe Inc.,Information Technology
+2024-06-14,ADBE,Adobe Inc.,Information Technology
+2024-12-12,ADBE,Adobe Inc.,Information Technology
+2025-03-13,ADBE,Adobe Inc.,Information Technology
+2024-02-22,AMD,Advanced Micro Devices,Information Technology
+2024-07-17,AMD,Advanced Micro Devices,Information Technology
+2024-10-30,AMD,Advanced Micro Devices,Information Technology
+2025-04-09,AMD,Advanced Micro Devices,Information Technology
+2024-05-03,AMGN,Amgen,Health Care
+2025-04-09,AMZN,Amazon,Consumer Discretionary
+2024-06-13,AVGO,Broadcom,Information Technology
+2024-07-31,AVGO,Broadcom,Information Technology
+2024-09-06,AVGO,Broadcom,Information Technology
+2024-12-13,AVGO,Broadcom,Information Technology
+2024-12-16,AVGO,Broadcom,Information Technology
+2025-01-27,AVGO,Broadcom,Information Technology
+2025-04-03,AVGO,Broadcom,Information Technology
+2025-04-09,AVGO,Broadcom,Information Technology
+2024-02-23,BKNG,Booking Holdings,Consumer Discretionary
+2025-04-09,BKNG,Booking Holdings,Consumer Discretionary
+2025-01-30,CMCSA,Comcast,Communication Services
+2024-01-22,GILD,Gilead Sciences,Health Care
+2024-04-26,GOOGL,Alphabet Inc. (Class A),Communication Services
+2024-01-26,INTC,Intel,Information Technology
+2024-08-02,INTC,Intel,Information Technology
+2025-02-18,INTC,Intel,Information Technology
+2025-03-13,INTC,Intel,Information Technology
+2025-04-04,INTC,Intel,Information Technology
+2025-04-09,INTC,Intel,Information Technology
+2025-02-26,INTU,Intuit,Information Technology
+2024-01-10,ISRG,Intuitive Surgical,Health Care
+2024-10-18,ISRG,Intuitive Surgical,Health Care
+2025-04-09,ISRG,Intuitive Surgical,Health Care
+2024-02-02,META,Meta Platforms,Communication Services
+2024-04-25,META,Meta Platforms,Communication Services
+2025-04-09,META,Meta Platforms,Communication Services
+2025-07-31,META,Meta Platforms,Communication Services
+2025-04-09,MSFT,Microsoft,Information Technology
+2024-01-24,NFLX,"Netflix, Inc.",Communication Services
+2024-10-18,NFLX,"Netflix, Inc.",Communication Services
+2024-02-22,NVDA,Nvidia,Information Technology
+2024-04-19,NVDA,Nvidia,Information Technology
+2024-07-31,NVDA,Nvidia,Information Technology
+2025-01-27,NVDA,Nvidia,Information Technology
+2025-04-09,NVDA,Nvidia,Information Technology
+2024-02-06,PLTR,Palantir Technologies,Information Technology
+2024-05-07,PLTR,Palantir Technologies,Information Technology
+2024-08-06,PLTR,Palantir Technologies,Information Technology
+2024-08-08,PLTR,Palantir Technologies,Information Technology
+2024-09-09,PLTR,Palantir Technologies,Information Technology
+2024-11-05,PLTR,Palantir Technologies,Information Technology
+2024-11-15,PLTR,Palantir Technologies,Information Technology
+2025-02-04,PLTR,Palantir Technologies,Information Technology
+2025-02-19,PLTR,Palantir Technologies,Information Technology
+2025-02-24,PLTR,Palantir Technologies,Information Technology
+2025-03-06,PLTR,Palantir Technologies,Information Technology
+2025-03-10,PLTR,Palantir Technologies,Information Technology
+2025-04-04,PLTR,Palantir Technologies,Information Technology
+2025-04-09,PLTR,Palantir Technologies,Information Technology
+2025-05-06,PLTR,Palantir Technologies,Information Technology
+2024-02-08,PYPL,PayPal,Financials
+2025-02-04,PYPL,PayPal,Financials
+2025-04-09,PYPL,PayPal,Financials
+2025-04-09,QCOM,Qualcomm,Information Technology
+2024-05-01,SBUX,Starbucks,Consumer Discretionary
+2024-08-13,SBUX,Starbucks,Consumer Discretionary
+2025-04-03,SBUX,Starbucks,Consumer Discretionary
+2025-04-09,SBUX,Starbucks,Consumer Discretionary
+2025-04-25,TMUS,T-Mobile US,Communication Services
+2024-01-25,TSLA,"Tesla, Inc.",Consumer Discretionary
+2024-04-24,TSLA,"Tesla, Inc.",Consumer Discretionary
+2024-04-29,TSLA,"Tesla, Inc.",Consumer Discretionary
+2024-07-02,TSLA,"Tesla, Inc.",Consumer Discretionary
+2024-07-24,TSLA,"Tesla, Inc.",Consumer Discretionary
+2024-10-24,TSLA,"Tesla, Inc.",Consumer Discretionary
+2024-11-06,TSLA,"Tesla, Inc.",Consumer Discretionary
+2025-03-10,TSLA,"Tesla, Inc.",Consumer Discretionary
+2025-03-24,TSLA,"Tesla, Inc.",Consumer Discretionary
+2025-04-04,TSLA,"Tesla, Inc.",Consumer Discretionary
+2025-04-09,TSLA,"Tesla, Inc.",Consumer Discretionary
+2025-06-05,TSLA,"Tesla, Inc.",Consumer Discretionary
+2025-04-09,TXN,Texas Instruments,Information Technology
+2025-07-23,TXN,Texas Instruments,Information Technology
+2024-11-11,ABBV,AbbVie,Health Care
+2025-04-09,AXP,American Express,Financials
+2025-04-03,BA,Boeing,Industrials
+2025-04-09,BA,Boeing,Industrials
+2025-04-03,BAC,Bank of America,Financials
+2024-07-26,BMY,Bristol Myers Squibb,Health Care
+2024-11-11,BMY,Bristol Myers Squibb,Health Care
+2025-04-03,C,Citigroup,Financials
+2024-11-06,COF,Capital One,Financials
+2025-04-09,COF,Capital One,Financials
+2025-04-03,COP,ConocoPhillips,Energy
+2025-04-09,COP,ConocoPhillips,Energy
+2024-05-30,CRM,Salesforce,Information Technology
+2024-12-04,CRM,Salesforce,Information Technology
+2024-05-01,CVS,CVS Health,Health Care
+2024-11-06,CVS,CVS Health,Health Care
+2025-02-12,CVS,CVS Health,Health Care
+2024-02-08,DIS,Walt Disney Company (The),Communication Services
+2025-04-09,DIS,Walt Disney Company (The),Communication Services
+2025-05-07,DIS,Walt Disney Company (The),Communication Services
+2024-02-07,EMR,Emerson Electric,Industrials
+2025-04-09,EMR,Emerson Electric,Industrials
+2024-06-26,FDX,FedEx,Industrials
+2024-09-20,FDX,FedEx,Industrials
+2025-04-03,FDX,FedEx,Industrials
+2025-04-09,FDX,FedEx,Industrials
+2025-04-04,GE,GE Aerospace,Industrials
+2025-04-09,GE,GE Aerospace,Industrials
+2024-11-06,GS,Goldman Sachs,Financials
+2025-04-09,GS,Goldman Sachs,Financials
+2025-01-30,IBM,IBM,Information Technology
+2024-11-06,JPM,JPMorgan Chase,Financials
+2025-04-17,LLY,Eli Lilly and Company,Health Care
+2025-05-01,LLY,Eli Lilly and Company,Health Care
+2025-08-07,LLY,Eli Lilly and Company,Health Care
+2025-07-22,LMT,Lockheed Martin,Industrials
+2024-01-23,MMM,3M,Industrials
+2024-07-26,MMM,3M,Industrials
+2024-11-06,MS,Morgan Stanley,Financials
+2025-04-09,MS,Morgan Stanley,Financials
+2024-06-28,NKE,"Nike, Inc.",Consumer Discretionary
+2025-04-03,NKE,"Nike, Inc.",Consumer Discretionary
+2025-04-09,NKE,"Nike, Inc.",Consumer Discretionary
+2025-06-27,NKE,"Nike, Inc.",Consumer Discretionary
+2024-05-30,NOW,ServiceNow,Information Technology
+2024-07-25,NOW,ServiceNow,Information Technology
+2025-01-30,NOW,ServiceNow,Information Technology
+2025-04-09,NOW,ServiceNow,Information Technology
+2025-04-24,NOW,ServiceNow,Information Technology
+2024-03-12,ORCL,Oracle Corporation,Information Technology
+2024-06-12,ORCL,Oracle Corporation,Information Technology
+2024-09-10,ORCL,Oracle Corporation,Information Technology
+2025-01-27,ORCL,Oracle Corporation,Information Technology
+2025-04-09,ORCL,Oracle Corporation,Information Technology
+2025-06-12,ORCL,Oracle Corporation,Information Technology
+2024-10-22,PM,Philip Morris International,Consumer Staples
+2025-02-06,PM,Philip Morris International,Consumer Staples
+2024-07-16,SCHW,Charles Schwab Corporation,Financials
+2025-04-03,SPG,Simon Property Group,Real Estate
+2024-03-05,TGT,Target Corporation,Consumer Discretionary
+2024-08-21,TGT,Target Corporation,Consumer Discretionary
+2024-11-20,TGT,Target Corporation,Consumer Discretionary
+2025-04-03,TGT,Target Corporation,Consumer Discretionary
+2025-04-09,TGT,Target Corporation,Consumer Discretionary
+2024-02-14,UBER,Uber,Industrials
+2024-08-06,UBER,Uber,Industrials
+2024-10-11,UBER,Uber,Industrials
+2025-04-09,UBER,Uber,Industrials
+2025-04-17,UNH,UnitedHealth Group,Health Care
+2025-05-13,UNH,UnitedHealth Group,Health Care
+2025-05-15,UNH,UnitedHealth Group,Health Care
+2025-08-15,UNH,UnitedHealth Group,Health Care
+2024-07-23,UPS,United Parcel Service,Industrials
+2025-01-30,UPS,United Parcel Service,Industrials
+2025-07-29,UPS,United Parcel Service,Industrials
+2024-11-06,WFC,Wells Fargo,Financials
