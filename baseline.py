@@ -99,7 +99,7 @@ if __name__ == "__main__":
 
     
     # 전문가 에이전트 - GPT-5
-    EXPERT_MODEL = "openai/gpt-5"
+    EXPERT_MODEL = "openai/gpt-5" # 2024년 9월 30일 cutoff -> 4: 2024년 6월 30일
     expert_agent = OpenAIAgent(model_name=EXPERT_MODEL, client=client)
 
     # 대중 에이전트 - GPT-5-nano
@@ -112,7 +112,8 @@ if __name__ == "__main__":
 
     # --- 3. 예측 시스템 실행 ---
     predictor = StockPredictor(expert_agent, crowd_agents)
-    stock_data = "문자열 or .csv"
+    stock_data = "문자열 or .csv" # 이벤트 텍스트 데이터 + S&P100 개요 + S&P100에 대한 주가 데이터
+    # 일반 텍스트로 주자.
     
     result = predictor.predict(stock_data)
 

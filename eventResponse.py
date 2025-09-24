@@ -20,6 +20,7 @@ class LLMExperiment:
     """LLM 투자 결정 실험을 관리하는 클래스."""
 
     BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
+    # 공통 rule
     SYSTEM_PROMPT = textwrap.dedent("""
         당신은 주식 이벤트 해석을 돕는 분석가입니다.
         아래 사용자 이벤트를 읽고 '산다' 또는 '안산다' 중 하나로 결론을 내리세요.

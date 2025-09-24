@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-09-24T05:22:32.452335",
+  "total_events_processed": 160,
+  "filter_statistics": {
+    "total_collected": 4129,
+    "date_filtered": 2469,
+    "final_count": 1660,
+    "processed_events": 160
+  },
+  "filtering_rate": {
+    "kept_percentage": 40.20343908936789,
+    "filtered_percentage": 59.79656091063211
+  },
+  "error_count": 0,
+  "output_files": {
+    "csv_file": "../data/articles/csv/filtered_news_20250924_043743.csv",
+    "jsonl_file": "../data/articles/json/filtered_news_20250924_043743.jsonl"
+  }
+}
