@@ -9,8 +9,8 @@ load_dotenv()
 
 # --- 응답 형식 정의 ---
 class AgentPrediction(TypedDict):
-    decision: str
-    confidence: int
+    decision: str # 살지 말지
+    confidence: int # 신뢰도
 
 # --- 프롬프트 생성 함수 ---
 def create_stock_prompt(stock_data: str) -> str:
