@@ -20,6 +20,27 @@ print(f"컬럼: {list(df.columns)}")
 print(f"고유 심볼 수: {df['symbol'].nunique()}")
 print(f"날짜 범위: {df['search_date'].min()} ~ {df['search_date'].max()}")
 
+# 주식 데이터 로드 (섹터 정보 포함)
+stock_data_file = '../data/stock_data.csv'
+print(f"\n주식 데이터 로드: {stock_data_file}")
+stock_df = pd.read_csv(stock_data_file)
+print(f"주식 데이터 로드 성공: {len(stock_df):,}개 기업")
+print(f"주식 데이터 컬럼: {list(stock_df.columns)}")
+
+# 뉴스 데이터와 주식 데이터 병합 (섹터 정보 추가)
+print(f"\n섹터 정보 병합...")
+df = df.merge(stock_df[['Symbol', 'Sector']], left_on='symbol', right_on='Symbol', how='left')
+df = df.drop('Symbol', axis=1)  # 중복 컬럼 제거
+
+# 병합 결과 확인
+sector_missing = df['Sector'].isna().sum()
+print(f"섹터 정보 병합 완료")
+print(f"섹터 정보 있음: {len(df) - sector_missing:,}개")
+print(f"섹터 정보 없음: {sector_missing:,}개")
+if sector_missing > 0:
+    missing_symbols = df[df['Sector'].isna()]['symbol'].unique()
+    print(f"섹터 정보 없는 심볼: {list(missing_symbols)}")
+
 print("\n" + "="*50)
 
 # 2. 시가총액 계산
@@ -171,12 +192,21 @@ print(f"\n최종 통계:")
 print(f"총 뉴스 기사 수: {len(df):,}")
 print(f"시가총액 데이터 있음: {df['market_cap'].notna().sum():,}")
 print(f"시가총액 데이터 없음: {df['market_cap'].isna().sum():,}")
+print(f"섹터 데이터 있음: {df['Sector'].notna().sum():,}")
+print(f"섹터 데이터 없음: {df['Sector'].isna().sum():,}")
 
 if df['market_cap'].notna().any():
     print(f"평균 시가총액: ${df['market_cap'].mean():,.0f}")
     print(f"중간값 시가총액: ${df['market_cap'].median():,.0f}")
     print(f"최대 시가총액: ${df['market_cap'].max():,.0f}")
     print(f"최소 시가총액: ${df['market_cap'].min():,.0f}")
+
+# 섹터별 통계
+if df['Sector'].notna().any():
+    print(f"\n섹터별 뉴스 기사 수:")
+    sector_counts = df['Sector'].value_counts()
+    for sector, count in sector_counts.items():
+        print(f"  {sector}: {count:,}개")
 
 print("\n" + "="*50)
 print("모든 작업 완료!")

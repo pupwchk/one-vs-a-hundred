@@ -47,7 +47,7 @@ class OpenAIAgent(BaseModelAgent):
                 messages=[{"role": "user", "content": prompt}],
                 response_format={"type": "json_object"}, # JSON 응답 모드 활성화
                 max_tokens=50,
-                temperature=0.5, # ??
+                temperature=0, # ??
             )
             # JSON 파싱
             import json
