@@ -6,73 +6,114 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a research project titled "1 LLM vs. 100 persona given sLLMs" that compares the decision-making capabilities of a single high-performance LLM against 100 smaller LLMs for stock investment decisions based on news events.
 
-## Core Architecture
-
-### Main Components
-
-1. **baseline.py** - Core implementation of the 1-vs-100 experiment framework
-   - `OpenAIAgent` class for wrapping OpenRouter API calls to different models
-   - `StockPredictor` class that orchestrates expert vs crowd predictions
-   - Uses OpenRouter API for accessing both GPT-5 (expert) and GPT-5-nano (crowd) models
-
-2. **eventResponse.py** - Simplified experimental template for Colab environments
-   - `LLMExperiment` class for managing investment decision experiments
-   - Aggregates weighted responses from multiple small models
-   - Compares against single high-performance model decisions
-
-3. **Data Pipeline Scripts** (in `yujin/` directory):
-   - `02_crawling_articles.py` - News crawling for specific stock events
-   - `03_crawling_articles_OOP.py` - Object-oriented version of news crawler
-   - `04_attach_marketcap.py` - Adds market capitalization data to articles
-   - `01_data_related.ipynb` - Data preprocessing and S&P 100 stock analysis
-
-### Data Structure
-
-- **Event Data**: S&P 100 stocks with significant price movements
-- **News Data**: Crawled articles from the day before each event using GNews
-- **Stock Data**: S&P 100 company information (symbols, names, sectors)
-- **Market Data**: Market capitalization information attached to news articles
-
-## Development Environment
-
-### Dependencies
-- Python >=3.13,<4.0
-- pandas - Data manipulation
-- langchain - LLM framework integration
-- openai - OpenAI API client (used with OpenRouter)
-- dotenv - Environment variable management
-- Additional dependencies: yfinance, gnews, beautifulsoup4, requests
+## Development Commands
 
 ### Environment Setup
 ```bash
-# Install dependencies
+# Install dependencies using Poetry
 poetry install
 
-# Set up environment variables
-# Create .env file with:
+# Run the main experiment framework
+python baseline.py
+
+# Run the simplified Colab-friendly experiment
+python eventResponse.py
+
+# Execute specific data processing scripts
+python yujin/B_crawling_articles.py
+python yujin/C_crawling_articles_OOP.py
+python yujin/D_attach_marketcap.py
+python yujin/E_data_form_making.py
+python yujin/F_call_openrouter.py
+
+# View Jupyter notebook for data analysis
+jupyter notebook yujin/A_data_related.ipynb
+```
+
+### Environment Variables
+Create a `.env` file with:
+```
 OPENROUTER_API_KEY=your_api_key_here
 ```
 
-### Key Configuration
-- Uses OpenRouter API as proxy for accessing multiple LLM models
-- Expert model: `openai/gpt-5`
-- Crowd models: `openai/gpt-5-nano` (100 instances)
-- Default response format: JSON with `decision` and `confidence` fields
+## Core Architecture
 
-## Data Processing Pipeline
+### Experiment Framework Architecture
 
-1. **Stock Event Identification**: Identify S&P 100 stocks with significant movements
-2. **News Collection**: Crawl relevant news articles from the day before each event
-3. **Data Enrichment**: Add market capitalization and sector information
-4. **Experiment Execution**: Run 1-vs-100 comparison experiments
+The project follows a modular agent-based architecture for comparing expert vs crowd intelligence:
 
-## File Locations
+1. **Agent Abstraction Layer** (`baseline.py`):
+   - `BaseModelAgent` abstract class defines the prediction interface
+   - `OpenAIAgent` implements OpenRouter API calls with error handling
+   - `AgentPrediction` TypedDict enforces response format: `{"decision": str, "confidence": int}`
 
-- **Data**: `data/` directory contains CSV files and processed articles
-- **Raw Articles**: `data/articles/` with JSON and CSV subdirectories
-- **Processed Data**: Event data, stock data, and filtered news datasets
-- **Notebooks**: `yujin/01_data_related.ipynb` for data exploration and analysis
+2. **Prediction Orchestration** (`StockPredictor` class):
+   - Manages expert agent (single high-performance model)
+   - Coordinates crowd agents (100 smaller models)
+   - Aggregates crowd decisions using confidence-weighted voting
 
-## Testing and Validation
+3. **Experimental Templates**:
+   - **baseline.py**: Full-featured framework with modular agent design
+   - **eventResponse.py**: Simplified template optimized for Colab environments with hardcoded configurations
 
-The project uses real financial data and news articles to validate the experimental framework. Test runs can be performed with sample events to ensure the pipeline works correctly before running full experiments.
+### Data Processing Pipeline
+
+Sequential data processing architecture in `yujin/` directory:
+
+1. **A_data_related.ipynb**: Initial data exploration and S&P 100 analysis
+2. **B_crawling_articles.py**: Basic news crawler implementation
+3. **C_crawling_articles_OOP.py**: Object-oriented news crawler with enhanced features
+4. **D_attach_marketcap.py**: Market capitalization data enrichment
+5. **E_data_form_making.py**: Data formatting for LLM agent consumption
+6. **F_call_openrouter.py**: Direct OpenRouter API integration example
+
+### OpenRouter API Integration
+
+All LLM interactions use OpenRouter as a proxy for accessing multiple models:
+- **Expert Model**: `openai/gpt-5` for high-performance reasoning
+- **Crowd Models**: `openai/gpt-5-nano` for cost-effective bulk predictions
+- **Response Format**: JSON objects with `decision`, `confidence`, and optional `reason` fields
+- **Error Handling**: Fallback to default predictions (`{"decision": "hold", "confidence": 50}`)
+
+## Data Structure and Flow
+
+### Input Data Format
+```python
+agent_data = {
+    'symbol': 'AAPL',
+    'search_date': '2024-12-11',
+    'titles': 'News title 1 / News title 2 / ...',
+    'descriptions': 'Description 1 / Description 2 / ...',
+    'sector': 'Technology'
+}
+```
+
+### File Organization
+- **Raw Data**: `data/articles/json/` and `data/articles/csv/`
+- **Processed Data**: `data/event_data.csv`, `data/stock_data.csv`
+- **Market Data**: Market cap enriched datasets with timestamps
+- **Configuration**: `.env` for API keys, `pyproject.toml` for dependencies
+
+### Experiment Flow
+1. Load and filter event data by symbol and date
+2. Format data for LLM consumption using `E_data_form_making.py`
+3. Execute expert prediction (single model)
+4. Execute crowd predictions (100 models in parallel)
+5. Aggregate crowd results using confidence-weighted voting
+6. Compare expert vs crowd final decisions
+
+## Key Implementation Details
+
+### Model Configuration
+- All models use JSON response format enforcement
+- Temperature settings vary: expert (0.0-0.2), crowd (0.6-1.0 with variance)
+- Max tokens limited to 50-256 for cost efficiency
+- Retry logic with exponential backoff for API failures
+
+### Decision Aggregation
+Crowd decisions use confidence-weighted voting:
+```python
+buy_sum = sum(res["confidence"] for res in crowd_results if res["decision"] == "buy")
+hold_sum = sum(res["confidence"] for res in crowd_results if res["decision"] == "hold")
+final_decision = "buy" if buy_sum > hold_sum else "hold"
+```

@@ -1,0 +1,152 @@
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
+import json
+from E_data_form_making import convert_df_to_agent_format
+
+load_dotenv()
+
+def create_expert_client():
+    """전문가 모델(GPT-5) 클라이언트 생성"""
+    return OpenAI(
+        base_url="https://openrouter.ai/api/v1",
+        api_key=os.getenv("OPENROUTER_API_KEY"),
+        default_headers={
+            "HTTP-Referer": "http://localhost:8000",
+            "X-Title": "Stock Analysis Expert"
+        }
+    )
+
+def create_nano_client(client_id):
+    """소형 모델(GPT-5-nano) 클라이언트 생성"""
+    return OpenAI(
+        base_url="https://openrouter.ai/api/v1",
+        api_key=os.getenv("OPENROUTER_API_KEY"),
+        default_headers={
+            "HTTP-Referer": "http://localhost:8000",
+            "X-Title": f"Stock Analysis Nano Agent {client_id}"
+        }
+    )
+
+def get_expert_prediction(client, data):
+    """전문가 모델의 심층 분석 예측"""
+    expert_prompt = f"""
+    You are a senior financial analyst with extensive experience in stock market analysis.
+
+    Analyze the provided data thoroughly and make an investment decision based on comprehensive reasoning.
+    Consider market context, sector trends, news sentiment, and potential impacts.
+
+    Data to analyze: {data}
+
+    Provide your response as a JSON object with this exact structure:
+    {{
+        "decision": "BUY" or "SELL",
+        "confidence": <integer 0-100>,
+        "reason": "<detailed 2-3 sentence explanation of your reasoning>"
+    }}
+
+    Focus on providing deep analytical insights and thorough reasoning for your decision.
+    """
+
+    try:
+        # GPT-5: 고도의 추론 능력과 상세한 응답 설정
+        response = client.chat.completions.create(
+            model="openai/gpt-5",
+            messages=[{"role": "user", "content": expert_prompt}],
+            reasoning_effort="high",  # 높은 추론 노력
+            verbosity="high",         # 상세한 응답
+            response_format={"type": "json_object"},
+            max_output_tokens=300
+        )
+        return json.loads(response.choices[0].message.content)
+    except Exception as e:
+        print(f"Expert model error: {e}")
+        return {"decision": "SELL", "confidence": 50, "reason": "Analysis failed due to technical error"}
+
+def get_nano_prediction(client, data, agent_id):
+    """소형 모델의 빠른 분류 예측"""
+    nano_prompt = f"""
+    Quick stock analysis task. Based on the news data, decide BUY or SELL.
+
+    Data: {data}
+
+    Response format (JSON only):
+    {{
+        "decision": "BUY" or "SELL",
+        "confidence": <integer 0-100>,
+        "reason": "<brief one-sentence reason>"
+    }}
+    """
+
+    try:
+        # GPT-5-nano: 최소 추론과 간결한 응답 설정
+        response = client.chat.completions.create(
+            model="openai/gpt-5-nano",
+            messages=[{"role": "user", "content": nano_prompt}],
+            reasoning_effort="minimal",  # 최소 추론 노력
+            verbosity="low",            # 간결한 응답
+            response_format={"type": "json_object"},
+            max_output_tokens=100
+        )
+        return json.loads(response.choices[0].message.content)
+    except Exception as e:
+        print(f"Nano model {agent_id} error: {e}")
+        return {"decision": "SELL", "confidence": 25, "reason": "Quick analysis suggests caution"}
+
+def aggregate_nano_results(nano_results):
+    """소형 모델들의 결과를 신뢰도 기반으로 집계"""
+    buy_confidence = sum(r["confidence"] for r in nano_results if r["decision"] == "BUY")
+    sell_confidence = sum(r["confidence"] for r in nano_results if r["decision"] == "SELL")
+
+    final_decision = "BUY" if buy_confidence > sell_confidence else "SELL"
+
+    return {
+        "aggregated_decision": final_decision,
+        "buy_confidence_sum": buy_confidence,
+        "sell_confidence_sum": sell_confidence,
+        "individual_results": nano_results
+    }
+
+def main():
+    """메인 실행 함수"""
+    # 데이터 로드
+    stock_data = convert_df_to_agent_format()
+
+    # 클라이언트 생성
+    expert_client = create_expert_client()
+    nano_clients = [create_nano_client(i+1) for i in range(3)]
+
+    print("=== 1 vs 3 LLM Stock Analysis ===\n")
+
+    # 전문가 예측 (1개)
+    print("🧠 Expert Analysis (GPT-5 with high reasoning):")
+    expert_result = get_expert_prediction(expert_client, stock_data)
+    print(f"Decision: {expert_result['decision']}")
+    print(f"Confidence: {expert_result['confidence']}%")
+    print(f"Reasoning: {expert_result['reason']}\n")
+
+    # 소형 모델 예측들 (3개)
+    print("⚡ Nano Models Analysis (GPT-5-nano with minimal reasoning):")
+    nano_results = []
+    for i, client in enumerate(nano_clients):
+        result = get_nano_prediction(client, stock_data, i+1)
+        nano_results.append(result)
+        print(f"Nano Agent {i+1}: {result['decision']} (Confidence: {result['confidence']}%)")
+
+    # 집계 결과
+    aggregated = aggregate_nano_results(nano_results)
+    print(f"\n📊 Aggregated Nano Results:")
+    print(f"Final Decision: {aggregated['aggregated_decision']}")
+    print(f"BUY Confidence Sum: {aggregated['buy_confidence_sum']}")
+    print(f"SELL Confidence Sum: {aggregated['sell_confidence_sum']}")
+
+    # 최종 비교
+    print(f"\n🏆 Final Comparison:")
+    print(f"Expert: {expert_result['decision']} ({expert_result['confidence']}%)")
+    print(f"Crowd: {aggregated['aggregated_decision']} (Total confidence difference: {abs(aggregated['buy_confidence_sum'] - aggregated['sell_confidence_sum'])})")
+
+    agreement = "✅ AGREE" if expert_result['decision'] == aggregated['aggregated_decision'] else "❌ DISAGREE"
+    print(f"Expert vs Crowd: {agreement}")
+
+if __name__ == "__main__":
+    main()
