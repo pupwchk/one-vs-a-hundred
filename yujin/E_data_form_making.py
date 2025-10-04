@@ -52,7 +52,7 @@ def convert_df_to_agent_format(csv_path='../data/articles/csv/news_with_market_c
     return agent_data
 
 
-# 사용 예시
+# # 사용 예시
 # if __name__ == "__main__":
 #     # 파일 경로 설정
 #     csv_path = '../data/articles/csv/news_with_market_cap_20250929_180045.csv'

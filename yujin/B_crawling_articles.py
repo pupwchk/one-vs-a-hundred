@@ -27,7 +27,7 @@ google_news = GNews(language='en', country='US')
 first_date = df_event["Date"].iloc[0].date()
 
 # start_date / end_date 속성 설정
-google_news.start_date = first_date - timedelta(days=1)
+google_news.start_date = first_date# - timedelta(days=1)
 google_news.end_date = first_date
 
 # 뉴스 검색

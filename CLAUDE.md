@@ -61,11 +61,12 @@ The project follows a modular agent-based architecture for comparing expert vs c
 Sequential data processing architecture in `yujin/` directory:
 
 1. **A_data_related.ipynb**: Initial data exploration and S&P 100 analysis
-2. **B_crawling_articles.py**: Basic news crawler implementation
-3. **C_crawling_articles_OOP.py**: Object-oriented news crawler with enhanced features
-4. **D_attach_marketcap.py**: Market capitalization data enrichment
-5. **E_data_form_making.py**: Data formatting for LLM agent consumption
-6. **F_call_openrouter.py**: Direct OpenRouter API integration example
+2. **B_crawling_articles.py**: Basic news crawler implementation (uses GNews API)
+3. **C_crawling_articles_OOP.py**: Object-oriented news crawler with enhanced features and immediate saving
+4. **D_attach_marketcap.py**: Market capitalization data enrichment using yfinance
+5. **E_data_form_making.py**: Data formatting for LLM agent consumption (`convert_df_to_agent_format()`)
+6. **F_call_openrouter.py**: Direct OpenRouter API integration example (deprecated - use baseline.py instead)
+7. **G_scoring_answer.py**: Scoring and evaluation of prediction results
 
 ### OpenRouter API Integration
 
@@ -91,16 +92,18 @@ agent_data = {
 ### File Organization
 - **Raw Data**: `data/articles/json/` and `data/articles/csv/`
 - **Processed Data**: `data/event_data.csv`, `data/stock_data.csv`
-- **Market Data**: Market cap enriched datasets with timestamps
+- **Market Data**: Market cap enriched datasets with timestamps (e.g., `news_with_market_cap_YYYYMMDD_HHMMSS.csv`)
+- **Prediction Results**: `data/answer/prediction_results.csv`
 - **Configuration**: `.env` for API keys, `pyproject.toml` for dependencies
 
 ### Experiment Flow
 1. Load and filter event data by symbol and date
-2. Format data for LLM consumption using `E_data_form_making.py`
+2. Format data for LLM consumption using `E_data_form_making.convert_df_to_agent_format()`
 3. Execute expert prediction (single model)
 4. Execute crowd predictions (100 models in parallel)
 5. Aggregate crowd results using confidence-weighted voting
 6. Compare expert vs crowd final decisions
+7. Evaluate results using `G_scoring_answer.py`
 
 ## Key Implementation Details
 
@@ -117,3 +120,19 @@ buy_sum = sum(res["confidence"] for res in crowd_results if res["decision"] == "
 hold_sum = sum(res["confidence"] for res in crowd_results if res["decision"] == "hold")
 final_decision = "buy" if buy_sum > hold_sum else "hold"
 ```
+
+## External Dependencies
+
+### Required Python Packages
+- **pandas**: Data manipulation and CSV processing
+- **langchain**: LLM framework integration
+- **openai**: OpenAI/OpenRouter API client
+- **dotenv**: Environment variable management
+- **gnews**: Google News API for article crawling (`B_crawling_articles.py`, `C_crawling_articles_OOP.py`)
+- **yfinance**: Yahoo Finance API for market cap data (`D_attach_marketcap.py`)
+- **requests**: HTTP client for OpenRouter API (`eventResponse.py`)
+
+### API Services
+- **OpenRouter**: Proxy service for accessing multiple LLM providers (requires `OPENROUTER_API_KEY`)
+- **GNews**: News article collection (used in crawling scripts)
+- **Yahoo Finance**: Historical market data and market capitalization

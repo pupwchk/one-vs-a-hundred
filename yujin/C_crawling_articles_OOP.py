@@ -7,10 +7,12 @@ from tqdm import tqdm
 from pathlib import Path
 import logging
 from typing import List, Dict, Optional, Tuple
-import dateutil.parser
-import pytz
-from dateutil.tz import gettz
 import time
+import warnings
+warnings.filterwarnings(action='ignore')
+
+
+# 추가해야 하는 기능: 링크에 접속해서 뉴스 본문까지 모두 긁어오기.
 
 
 class NewsCollector:
@@ -50,8 +52,6 @@ class NewsCollector:
         self.error_log = []
         self.filter_stats = {
             'total_collected': 0,
-            'date_filtered': 0,
-            'final_count': 0,
             'processed_events': 0
         }
         
@@ -130,85 +130,6 @@ class NewsCollector:
             except Exception as e:
                 self.logger.error(f"에러 로그 저장 실패: {str(e)}")
     
-    def _parse_published_date(self, published_date_str: str) -> Optional[datetime]:
-        """
-        published date 문자열을 datetime 객체로 파싱
-        
-        Args:
-            published_date_str: 발행일 문자열 (예: "Wed, 09 Apr 2025 07:00:00 GMT")
-            
-        Returns:
-            파싱된 datetime 객체 또는 None (파싱 실패 시)
-        """
-        try:
-            if not published_date_str or published_date_str.strip() == '':
-                return None
-            
-            # dateutil.parser로 다양한 형태의 날짜 문자열 파싱
-            parsed_date = dateutil.parser.parse(published_date_str)
-            return parsed_date
-            
-        except Exception as e:
-            self.logger.debug(f"날짜 파싱 실패: {published_date_str} - {str(e)}")
-            return None
-    
-    def _is_target_date(self, published_date: datetime, target_date: datetime) -> bool:
-        """
-        발행일이 목표 날짜와 같은지 확인 (날짜만 비교, 시간 무시)
-        
-        Args:
-            published_date: 기사 발행일
-            target_date: 목표 날짜 (이벤트 전날)
-            
-        Returns:
-            같은 날짜인지 여부
-        """
-        try:
-            # 두 날짜를 날짜만으로 비교 (시간 정보 제거)
-            pub_date = published_date.date()
-            target_date = target_date.date()
-            
-            return pub_date == target_date
-            
-        except Exception as e:
-            self.logger.debug(f"날짜 비교 실패: {str(e)}")
-            return False
-    
-    def _filter_news_by_date(self, news_list: List[Dict], target_date: datetime) -> List[Dict]:
-        """
-        뉴스 목록에서 목표 날짜에 해당하는 기사만 필터링
-        
-        Args:
-            news_list: 뉴스 기사 목록
-            target_date: 목표 날짜 (이벤트 전날)
-            
-        Returns:
-            필터링된 뉴스 목록
-        """
-        filtered_news = []
-        
-        for news_item in news_list:
-            published_date_str = news_item.get('published_date', '')
-            
-            # 날짜 파싱
-            published_date = self._parse_published_date(published_date_str)
-            
-            if published_date is None:
-                # 날짜 파싱 실패한 경우 제외
-                continue
-            
-            # 목표 날짜와 비교
-            if self._is_target_date(published_date, target_date):
-                # 추가 정보를 기사에 포함
-                news_item['parsed_published_date'] = published_date.isoformat()
-                news_item['is_target_date'] = True
-                filtered_news.append(news_item)
-            else:
-                # 필터링된 기사 정보 로그 (디버깅용)
-                self.logger.debug(f"날짜 불일치로 제외: {published_date.date()} != {target_date.date()}")
-        
-        return filtered_news
-    
     def _save_to_csv_immediately(self, news_data: List[Dict]):
         """뉴스 데이터를 CSV 파일에 즉시 저장"""
         if not news_data:
@@ -248,26 +169,26 @@ class NewsCollector:
     
     def collect_news_for_date(self, date: datetime, symbol: str) -> List[Dict]:
         """
-        특정 날짜와 심볼에 대한 뉴스 수집, 필터링 및 즉시 저장
-        
+        특정 날짜와 심볼에 대한 뉴스 수집 및 즉시 저장
+
         Args:
             date: 이벤트 발생 날짜
             symbol: 주식 심볼
-            
+
         Returns:
             전날 뉴스 기사 리스트 (즉시 저장됨)
         """
         try:
             # 이벤트 전날의 뉴스를 검색
             search_date = date - timedelta(days=1)
-            
-            # 날짜 범위 설정 (GNews 경고 방지를 위해 end_date를 하루 뒤로 설정)
+
+            # 날짜 범위 설정 (같은 날짜로 설정)
             self.google_news.start_date = search_date.date()
-            self.google_news.end_date = search_date.date() + timedelta(days=1)
-            
+            self.google_news.end_date = search_date.date()
+
             # 뉴스 검색
             news_results = self.google_news.get_news(symbol)
-            
+
             # 결과 정리
             processed_news = []
             for news in news_results:
@@ -279,7 +200,7 @@ class NewsCollector:
                 else:
                     publisher_title = str(publisher_info)
                     publisher_href = ''
-                
+
                 news_item = {
                     'event_date': date.isoformat(),
                     'search_date': search_date.date().isoformat(),
@@ -296,22 +217,14 @@ class NewsCollector:
             # 통계 업데이트
             self.filter_stats['total_collected'] += len(processed_news)
             
-            # 전날 날짜에 해당하는 뉴스만 필터링
-            filtered_news = self._filter_news_by_date(processed_news, search_date)
-            
-            # 필터링 통계 업데이트
-            filtered_count = len(processed_news) - len(filtered_news)
-            self.filter_stats['date_filtered'] += filtered_count
-            self.filter_stats['final_count'] += len(filtered_news)
-            
             # 즉시 저장
-            if filtered_news:
-                self._save_to_csv_immediately(filtered_news)
-                self._save_to_jsonl_immediately(filtered_news)
+            if processed_news:
+                self._save_to_csv_immediately(processed_news)
+                self._save_to_jsonl_immediately(processed_news)
             
-            self.logger.info(f"{symbol} ({search_date.date()}): 수집 {len(processed_news)}개 → 필터링 후 {len(filtered_news)}개 → 즉시 저장 완료")
+            self.logger.info(f"{symbol} ({search_date.date()}): 수집 {len(processed_news)}개 → 즉시 저장 완료")
             
-            return filtered_news
+            return processed_news
             
         except Exception as e:
             self._log_error(date, symbol, str(e), 'news_collection')
@@ -326,23 +239,21 @@ class NewsCollector:
         # 초기화
         self.filter_stats = {
             'total_collected': 0,
-            'date_filtered': 0,
-            'final_count': 0,
             'processed_events': 0
         }
         
         # 진행 상황 표시를 위한 tqdm
         for index, row in tqdm(self.df_event.iterrows(), 
                               total=len(self.df_event), 
-                              desc="뉴스 수집, 필터링 및 저장"):
+                              desc="뉴스 수집 및 저장"):
             
             date = row['Date']
             symbol = row['Symbol']
             
             self.logger.info(f"처리 중: {symbol} - 이벤트 날짜: {date.date()}, 검색 날짜: {(date - timedelta(days=1)).date()}")
             
-            # 뉴스 수집, 필터링 및 즉시 저장
-            filtered_news_data = self.collect_news_for_date(date, symbol)
+            # 뉴스 수집 및 즉시 저장
+            collected_news = self.collect_news_for_date(date, symbol)
             
             # 처리된 이벤트 수 증가
             self.filter_stats['processed_events'] += 1
@@ -350,11 +261,9 @@ class NewsCollector:
             # API 호출 제한을 위한 잠시 대기 (필요시)
             time.sleep(0.3)
         
-        self.logger.info("뉴스 수집, 필터링 및 저장 완료")
+        self.logger.info("뉴스 수집 및 저장 완료")
         self.logger.info(f"처리된 이벤트 수: {self.filter_stats['processed_events']}")
         self.logger.info(f"총 수집: {self.filter_stats['total_collected']}개")
-        self.logger.info(f"날짜 불일치로 제외: {self.filter_stats['date_filtered']}개")
-        self.logger.info(f"최종 저장: {self.filter_stats['final_count']}개")
     
     def _convert_jsonl_to_json(self):
         """JSONL 파일을 표준 JSON 배열 형식으로 변환"""
@@ -382,17 +291,13 @@ class NewsCollector:
             return None
     
     def save_filter_stats(self):
-        """필터링 통계를 JSON 파일로 저장"""
+        """수집 통계를 JSON 파일로 저장"""
         stats_path = Path(self.output_base_path) / 'filter_stats.json'
         
         detailed_stats = {
             'timestamp': datetime.now().isoformat(),
             'total_events_processed': self.filter_stats['processed_events'],
-            'filter_statistics': self.filter_stats,
-            'filtering_rate': {
-                'kept_percentage': (self.filter_stats['final_count'] / max(self.filter_stats['total_collected'], 1)) * 100,
-                'filtered_percentage': (self.filter_stats['date_filtered'] / max(self.filter_stats['total_collected'], 1)) * 100
-            },
+            'total_news_collected': self.filter_stats['total_collected'],
             'error_count': len(self.error_log),
             'output_files': {
                 'csv_file': str(self.csv_file_path),
@@ -403,7 +308,7 @@ class NewsCollector:
         try:
             with open(stats_path, 'w', encoding='utf-8') as f:
                 json.dump(detailed_stats, f, ensure_ascii=False, indent=2)
-            self.logger.info(f"필터링 통계 저장 완료: {stats_path}")
+            self.logger.info(f"통계 저장 완료: {stats_path}")
         except Exception as e:
             self.logger.error(f"통계 파일 저장 실패: {str(e)}")
     
@@ -415,7 +320,7 @@ class NewsCollector:
             save_json: JSONL을 표준 JSON 형식으로도 저장할지 여부
         """
         try:
-            # 뉴스 수집, 필터링 및 즉시 저장
+            # 뉴스 수집 및 즉시 저장
             self.collect_all_news()
             
             # JSONL을 표준 JSON 형식으로 변환 (선택사항)
@@ -445,17 +350,10 @@ class NewsCollector:
     def _print_summary(self):
         """수집 결과 요약 출력"""
         print("\n" + "="*60)
-        print("뉴스 수집 및 필터링 결과 요약")
+        print("뉴스 수집 결과 요약")
         print("="*60)
         print(f"총 처리된 이벤트 수: {self.filter_stats['processed_events']}")
         print(f"수집된 전체 뉴스 수: {self.filter_stats['total_collected']}")
-        print(f"날짜 불일치로 제외된 뉴스 수: {self.filter_stats['date_filtered']}")
-        print(f"최종 전날 뉴스 수: {self.filter_stats['final_count']}")
-        
-        if self.filter_stats['total_collected'] > 0:
-            keep_rate = (self.filter_stats['final_count'] / self.filter_stats['total_collected']) * 100
-            print(f"필터링 유지율: {keep_rate:.1f}%")
-        
         print(f"발생한 에러 수: {len(self.error_log)}")
         print(f"출력 파일:")
         print(f"  - CSV: {self.csv_file_path}")
@@ -473,12 +371,12 @@ if __name__ == "__main__":
         output_base_path='../data/articles'
     )
     
-    # 뉴스 수집, 필터링 및 즉시 저장 실행
+    # 뉴스 수집 및 즉시 저장 실행
     result = collector.run(save_json=True)
     
     print(f"\n처리 완료!")
     print(f"CSV 파일: {result['csv_path']}")
     print(f"JSONL 파일: {result['jsonl_path']}")
     print(f"JSON 파일: {result['json_path']}")
-    print(f"최종 뉴스 수: {result['stats']['final_count']}")
+    print(f"총 뉴스 수: {result['stats']['total_collected']}")
     print(f"에러 수: {result['error_count']}")

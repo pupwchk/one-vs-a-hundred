@@ -1,161 +1,161 @@
-Date,Symbol,Name,Sector
-2025-04-09,AAPL,Apple Inc.,Information Technology
-2024-03-15,ADBE,Adobe Inc.,Information Technology
-2024-06-14,ADBE,Adobe Inc.,Information Technology
-2024-12-12,ADBE,Adobe Inc.,Information Technology
-2025-03-13,ADBE,Adobe Inc.,Information Technology
-2024-02-22,AMD,Advanced Micro Devices,Information Technology
-2024-07-17,AMD,Advanced Micro Devices,Information Technology
-2024-10-30,AMD,Advanced Micro Devices,Information Technology
-2025-04-09,AMD,Advanced Micro Devices,Information Technology
-2024-05-03,AMGN,Amgen,Health Care
-2025-04-09,AMZN,Amazon,Consumer Discretionary
-2024-06-13,AVGO,Broadcom,Information Technology
-2024-07-31,AVGO,Broadcom,Information Technology
-2024-09-06,AVGO,Broadcom,Information Technology
-2024-12-13,AVGO,Broadcom,Information Technology
-2024-12-16,AVGO,Broadcom,Information Technology
-2025-01-27,AVGO,Broadcom,Information Technology
-2025-04-03,AVGO,Broadcom,Information Technology
-2025-04-09,AVGO,Broadcom,Information Technology
-2024-02-23,BKNG,Booking Holdings,Consumer Discretionary
-2025-04-09,BKNG,Booking Holdings,Consumer Discretionary
-2025-01-30,CMCSA,Comcast,Communication Services
-2024-01-22,GILD,Gilead Sciences,Health Care
-2024-04-26,GOOGL,Alphabet Inc. (Class A),Communication Services
-2024-01-26,INTC,Intel,Information Technology
-2024-08-02,INTC,Intel,Information Technology
-2025-02-18,INTC,Intel,Information Technology
-2025-03-13,INTC,Intel,Information Technology
-2025-04-04,INTC,Intel,Information Technology
-2025-04-09,INTC,Intel,Information Technology
-2025-02-26,INTU,Intuit,Information Technology
-2024-01-10,ISRG,Intuitive Surgical,Health Care
-2024-10-18,ISRG,Intuitive Surgical,Health Care
-2025-04-09,ISRG,Intuitive Surgical,Health Care
-2024-02-02,META,Meta Platforms,Communication Services
-2024-04-25,META,Meta Platforms,Communication Services
-2025-04-09,META,Meta Platforms,Communication Services
-2025-07-31,META,Meta Platforms,Communication Services
-2025-04-09,MSFT,Microsoft,Information Technology
-2024-01-24,NFLX,"Netflix, Inc.",Communication Services
-2024-10-18,NFLX,"Netflix, Inc.",Communication Services
-2024-02-22,NVDA,Nvidia,Information Technology
-2024-04-19,NVDA,Nvidia,Information Technology
-2024-07-31,NVDA,Nvidia,Information Technology
-2025-01-27,NVDA,Nvidia,Information Technology
-2025-04-09,NVDA,Nvidia,Information Technology
-2024-02-06,PLTR,Palantir Technologies,Information Technology
-2024-05-07,PLTR,Palantir Technologies,Information Technology
-2024-08-06,PLTR,Palantir Technologies,Information Technology
-2024-08-08,PLTR,Palantir Technologies,Information Technology
-2024-09-09,PLTR,Palantir Technologies,Information Technology
-2024-11-05,PLTR,Palantir Technologies,Information Technology
-2024-11-15,PLTR,Palantir Technologies,Information Technology
-2025-02-04,PLTR,Palantir Technologies,Information Technology
-2025-02-19,PLTR,Palantir Technologies,Information Technology
-2025-02-24,PLTR,Palantir Technologies,Information Technology
-2025-03-06,PLTR,Palantir Technologies,Information Technology
-2025-03-10,PLTR,Palantir Technologies,Information Technology
-2025-04-04,PLTR,Palantir Technologies,Information Technology
-2025-04-09,PLTR,Palantir Technologies,Information Technology
-2025-05-06,PLTR,Palantir Technologies,Information Technology
-2024-02-08,PYPL,PayPal,Financials
-2025-02-04,PYPL,PayPal,Financials
-2025-04-09,PYPL,PayPal,Financials
-2025-04-09,QCOM,Qualcomm,Information Technology
-2024-05-01,SBUX,Starbucks,Consumer Discretionary
-2024-08-13,SBUX,Starbucks,Consumer Discretionary
-2025-04-03,SBUX,Starbucks,Consumer Discretionary
-2025-04-09,SBUX,Starbucks,Consumer Discretionary
-2025-04-25,TMUS,T-Mobile US,Communication Services
-2024-01-25,TSLA,"Tesla, Inc.",Consumer Discretionary
-2024-04-24,TSLA,"Tesla, Inc.",Consumer Discretionary
-2024-04-29,TSLA,"Tesla, Inc.",Consumer Discretionary
-2024-07-02,TSLA,"Tesla, Inc.",Consumer Discretionary
-2024-07-24,TSLA,"Tesla, Inc.",Consumer Discretionary
-2024-10-24,TSLA,"Tesla, Inc.",Consumer Discretionary
-2024-11-06,TSLA,"Tesla, Inc.",Consumer Discretionary
-2025-03-10,TSLA,"Tesla, Inc.",Consumer Discretionary
-2025-03-24,TSLA,"Tesla, Inc.",Consumer Discretionary
-2025-04-04,TSLA,"Tesla, Inc.",Consumer Discretionary
-2025-04-09,TSLA,"Tesla, Inc.",Consumer Discretionary
-2025-06-05,TSLA,"Tesla, Inc.",Consumer Discretionary
-2025-04-09,TXN,Texas Instruments,Information Technology
-2025-07-23,TXN,Texas Instruments,Information Technology
-2024-11-11,ABBV,AbbVie,Health Care
-2025-04-09,AXP,American Express,Financials
-2025-04-03,BA,Boeing,Industrials
-2025-04-09,BA,Boeing,Industrials
-2025-04-03,BAC,Bank of America,Financials
-2024-07-26,BMY,Bristol Myers Squibb,Health Care
-2024-11-11,BMY,Bristol Myers Squibb,Health Care
-2025-04-03,C,Citigroup,Financials
-2024-11-06,COF,Capital One,Financials
-2025-04-09,COF,Capital One,Financials
-2025-04-03,COP,ConocoPhillips,Energy
-2025-04-09,COP,ConocoPhillips,Energy
-2024-05-30,CRM,Salesforce,Information Technology
-2024-12-04,CRM,Salesforce,Information Technology
-2024-05-01,CVS,CVS Health,Health Care
-2024-11-06,CVS,CVS Health,Health Care
-2025-02-12,CVS,CVS Health,Health Care
-2024-02-08,DIS,Walt Disney Company (The),Communication Services
-2025-04-09,DIS,Walt Disney Company (The),Communication Services
-2025-05-07,DIS,Walt Disney Company (The),Communication Services
-2024-02-07,EMR,Emerson Electric,Industrials
-2025-04-09,EMR,Emerson Electric,Industrials
-2024-06-26,FDX,FedEx,Industrials
-2024-09-20,FDX,FedEx,Industrials
-2025-04-03,FDX,FedEx,Industrials
-2025-04-09,FDX,FedEx,Industrials
-2025-04-04,GE,GE Aerospace,Industrials
-2025-04-09,GE,GE Aerospace,Industrials
-2024-11-06,GS,Goldman Sachs,Financials
-2025-04-09,GS,Goldman Sachs,Financials
-2025-01-30,IBM,IBM,Information Technology
-2024-11-06,JPM,JPMorgan Chase,Financials
-2025-04-17,LLY,Eli Lilly and Company,Health Care
-2025-05-01,LLY,Eli Lilly and Company,Health Care
-2025-08-07,LLY,Eli Lilly and Company,Health Care
-2025-07-22,LMT,Lockheed Martin,Industrials
-2024-01-23,MMM,3M,Industrials
-2024-07-26,MMM,3M,Industrials
-2024-11-06,MS,Morgan Stanley,Financials
-2025-04-09,MS,Morgan Stanley,Financials
-2024-06-28,NKE,"Nike, Inc.",Consumer Discretionary
-2025-04-03,NKE,"Nike, Inc.",Consumer Discretionary
-2025-04-09,NKE,"Nike, Inc.",Consumer Discretionary
-2025-06-27,NKE,"Nike, Inc.",Consumer Discretionary
-2024-05-30,NOW,ServiceNow,Information Technology
-2024-07-25,NOW,ServiceNow,Information Technology
-2025-01-30,NOW,ServiceNow,Information Technology
-2025-04-09,NOW,ServiceNow,Information Technology
-2025-04-24,NOW,ServiceNow,Information Technology
-2024-03-12,ORCL,Oracle Corporation,Information Technology
-2024-06-12,ORCL,Oracle Corporation,Information Technology
-2024-09-10,ORCL,Oracle Corporation,Information Technology
-2025-01-27,ORCL,Oracle Corporation,Information Technology
-2025-04-09,ORCL,Oracle Corporation,Information Technology
-2025-06-12,ORCL,Oracle Corporation,Information Technology
-2024-10-22,PM,Philip Morris International,Consumer Staples
-2025-02-06,PM,Philip Morris International,Consumer Staples
-2024-07-16,SCHW,Charles Schwab Corporation,Financials
-2025-04-03,SPG,Simon Property Group,Real Estate
-2024-03-05,TGT,Target Corporation,Consumer Discretionary
-2024-08-21,TGT,Target Corporation,Consumer Discretionary
-2024-11-20,TGT,Target Corporation,Consumer Discretionary
-2025-04-03,TGT,Target Corporation,Consumer Discretionary
-2025-04-09,TGT,Target Corporation,Consumer Discretionary
-2024-02-14,UBER,Uber,Industrials
-2024-08-06,UBER,Uber,Industrials
-2024-10-11,UBER,Uber,Industrials
-2025-04-09,UBER,Uber,Industrials
-2025-04-17,UNH,UnitedHealth Group,Health Care
-2025-05-13,UNH,UnitedHealth Group,Health Care
-2025-05-15,UNH,UnitedHealth Group,Health Care
-2025-08-15,UNH,UnitedHealth Group,Health Care
-2024-07-23,UPS,United Parcel Service,Industrials
-2025-01-30,UPS,United Parcel Service,Industrials
-2025-07-29,UPS,United Parcel Service,Industrials
-2024-11-06,WFC,Wells Fargo,Financials
+Date,Symbol,Name,Sector,price_change,up-down
+2025-04-09,AAPL,Apple Inc.,Information Technology,0.1532885769098551,1.0
+2024-03-15,ADBE,Adobe Inc.,Information Technology,-0.1367166606767439,-1.0
+2024-06-14,ADBE,Adobe Inc.,Information Technology,0.1451148989435331,1.0
+2024-12-12,ADBE,Adobe Inc.,Information Technology,-0.1369264975466848,-1.0
+2025-03-13,ADBE,Adobe Inc.,Information Technology,-0.1385317120841188,-1.0
+2024-02-22,AMD,Advanced Micro Devices,Information Technology,0.1069450851678972,1.0
+2024-07-17,AMD,Advanced Micro Devices,Information Technology,-0.1020558156267357,-1.0
+2024-10-30,AMD,Advanced Micro Devices,Information Technology,-0.1061653768209586,-1.0
+2025-04-09,AMD,Advanced Micro Devices,Information Technology,0.238204800811929,1.0
+2024-05-03,AMGN,Amgen,Health Care,0.1181795288153841,1.0
+2025-04-09,AMZN,Amazon,Consumer Discretionary,0.1197703152630624,1.0
+2024-06-13,AVGO,Broadcom,Information Technology,0.1226870928968277,1.0
+2024-07-31,AVGO,Broadcom,Information Technology,0.1195652138848968,1.0
+2024-09-06,AVGO,Broadcom,Information Technology,-0.1035204529989916,-1.0
+2024-12-13,AVGO,Broadcom,Information Technology,0.2443263328908407,1.0
+2024-12-16,AVGO,Broadcom,Information Technology,0.1120996414495292,1.0
+2025-01-27,AVGO,Broadcom,Information Technology,-0.1739680852344368,-1.0
+2025-04-03,AVGO,Broadcom,Information Technology,-0.1050613481256499,-1.0
+2025-04-09,AVGO,Broadcom,Information Technology,0.1866307833010017,1.0
+2024-02-23,BKNG,Booking Holdings,Consumer Discretionary,-0.1014943449934501,-1.0
+2025-04-09,BKNG,Booking Holdings,Consumer Discretionary,0.1085864558146101,1.0
+2025-01-30,CMCSA,Comcast,Communication Services,-0.1100107470488246,-1.0
+2024-01-22,GILD,Gilead Sciences,Health Care,-0.1015008239598919,-1.0
+2024-04-26,GOOGL,Alphabet Inc. (Class A),Communication Services,0.1022436802130795,1.0
+2024-01-26,INTC,Intel,Information Technology,-0.1190716931412595,-1.0
+2024-08-02,INTC,Intel,Information Technology,-0.2605851455985698,-1.0
+2025-02-18,INTC,Intel,Information Technology,0.1605931757168339,1.0
+2025-03-13,INTC,Intel,Information Technology,0.1460348362281129,1.0
+2025-04-04,INTC,Intel,Information Technology,-0.1150245157647507,-1.0
+2025-04-09,INTC,Intel,Information Technology,0.1875345660928944,1.0
+2025-02-26,INTU,Intuit,Information Technology,0.1257671243306961,1.0
+2024-01-10,ISRG,Intuitive Surgical,Health Care,0.1025230363587184,1.0
+2024-10-18,ISRG,Intuitive Surgical,Health Care,0.1000992386549539,1.0
+2025-04-09,ISRG,Intuitive Surgical,Health Care,0.1427354120736588,1.0
+2024-02-02,META,Meta Platforms,Communication Services,0.2031764782420428,1.0
+2024-04-25,META,Meta Platforms,Communication Services,-0.1056129129233582,-1.0
+2025-04-09,META,Meta Platforms,Communication Services,0.147556063140565,1.0
+2025-07-31,META,Meta Platforms,Communication Services,0.1125271184192262,1.0
+2025-04-09,MSFT,Microsoft,Information Technology,0.10133677966961,1.0
+2024-01-24,NFLX,"Netflix, Inc.",Communication Services,0.1070318218868182,1.0
+2024-10-18,NFLX,"Netflix, Inc.",Communication Services,0.1108703374210422,1.0
+2024-02-22,NVDA,Nvidia,Information Technology,0.1640085807788607,1.0
+2024-04-19,NVDA,Nvidia,Information Technology,-0.1000459635171006,-1.0
+2024-07-31,NVDA,Nvidia,Information Technology,0.1281210258681611,1.0
+2025-01-27,NVDA,Nvidia,Information Technology,-0.1696816612958368,-1.0
+2025-04-09,NVDA,Nvidia,Information Technology,0.1872273173774168,1.0
+2024-02-06,PLTR,Palantir Technologies,Information Technology,0.3080144579770125,1.0
+2024-05-07,PLTR,Palantir Technologies,Information Technology,-0.1511304880724505,-1.0
+2024-08-06,PLTR,Palantir Technologies,Information Technology,0.1037775003804404,1.0
+2024-08-08,PLTR,Palantir Technologies,Information Technology,0.1124620450661846,1.0
+2024-09-09,PLTR,Palantir Technologies,Information Technology,0.1407846541759332,1.0
+2024-11-05,PLTR,Palantir Technologies,Information Technology,0.234725941958934,1.0
+2024-11-15,PLTR,Palantir Technologies,Information Technology,0.1113551251082753,1.0
+2025-02-04,PLTR,Palantir Technologies,Information Technology,0.2399092963910518,1.0
+2025-02-19,PLTR,Palantir Technologies,Information Technology,-0.100786430036672,-1.0
+2025-02-24,PLTR,Palantir Technologies,Information Technology,-0.105278720568208,-1.0
+2025-03-06,PLTR,Palantir Technologies,Information Technology,-0.1072894537182357,-1.0
+2025-03-10,PLTR,Palantir Technologies,Information Technology,-0.1004593810010383,-1.0
+2025-04-04,PLTR,Palantir Technologies,Information Technology,-0.1147128769489065,-1.0
+2025-04-09,PLTR,Palantir Technologies,Information Technology,0.1899896857137417,1.0
+2025-05-06,PLTR,Palantir Technologies,Information Technology,-0.1204653505462473,-1.0
+2024-02-08,PYPL,PayPal,Financials,-0.1124288491720979,-1.0
+2025-02-04,PYPL,PayPal,Financials,-0.1316613046681989,-1.0
+2025-04-09,PYPL,PayPal,Financials,0.1139174522367143,1.0
+2025-04-09,QCOM,Qualcomm,Information Technology,0.1518530413970606,1.0
+2024-05-01,SBUX,Starbucks,Consumer Discretionary,-0.1587749439600289,-1.0
+2024-08-13,SBUX,Starbucks,Consumer Discretionary,0.2449695561057769,1.0
+2025-04-03,SBUX,Starbucks,Consumer Discretionary,-0.112161707575435,-1.0
+2025-04-09,SBUX,Starbucks,Consumer Discretionary,0.1128120377456711,1.0
+2025-04-25,TMUS,T-Mobile US,Communication Services,-0.1121748167146357,-1.0
+2024-01-25,TSLA,"Tesla, Inc.",Consumer Discretionary,-0.1212529313680481,-1.0
+2024-04-24,TSLA,"Tesla, Inc.",Consumer Discretionary,0.1206110940725275,1.0
+2024-04-29,TSLA,"Tesla, Inc.",Consumer Discretionary,0.1530691710339953,1.0
+2024-07-02,TSLA,"Tesla, Inc.",Consumer Discretionary,0.1019727143535935,1.0
+2024-07-24,TSLA,"Tesla, Inc.",Consumer Discretionary,-0.1233460458940368,-1.0
+2024-10-24,TSLA,"Tesla, Inc.",Consumer Discretionary,0.219190350702904,1.0
+2024-11-06,TSLA,"Tesla, Inc.",Consumer Discretionary,0.1475103244422446,1.0
+2025-03-10,TSLA,"Tesla, Inc.",Consumer Discretionary,-0.1542620682219511,-1.0
+2025-03-24,TSLA,"Tesla, Inc.",Consumer Discretionary,0.1193358012680052,1.0
+2025-04-04,TSLA,"Tesla, Inc.",Consumer Discretionary,-0.1041978682681468,-1.0
+2025-04-09,TSLA,"Tesla, Inc.",Consumer Discretionary,0.2268998983962453,1.0
+2025-06-05,TSLA,"Tesla, Inc.",Consumer Discretionary,-0.1425989378908212,-1.0
+2025-04-09,TXN,Texas Instruments,Information Technology,0.1608793488748634,1.0
+2025-07-23,TXN,Texas Instruments,Information Technology,-0.1333984128343965,-1.0
+2024-11-11,ABBV,AbbVie,Health Care,-0.1256642772582478,-1.0
+2025-04-09,AXP,American Express,Financials,0.1338432569849397,1.0
+2025-04-03,BA,Boeing,Industrials,-0.1047104541535662,-1.0
+2025-04-09,BA,Boeing,Industrials,0.1537413589813228,1.0
+2025-04-03,BAC,Bank of America,Financials,-0.1106331421928898,-1.0
+2024-07-26,BMY,Bristol Myers Squibb,Health Care,0.114424499996206,1.0
+2024-11-11,BMY,Bristol Myers Squibb,Health Care,0.1049132365988045,1.0
+2025-04-03,C,Citigroup,Financials,-0.1213769302156395,-1.0
+2024-11-06,COF,Capital One,Financials,0.1500753032499826,1.0
+2025-04-09,COF,Capital One,Financials,0.1480799856613621,1.0
+2025-04-03,COP,ConocoPhillips,Energy,-0.1022619290996944,-1.0
+2025-04-09,COP,ConocoPhillips,Energy,0.107065060597375,1.0
+2024-05-30,CRM,Salesforce,Information Technology,-0.1973714429433989,-1.0
+2024-12-04,CRM,Salesforce,Information Technology,0.1099478497476453,1.0
+2024-05-01,CVS,CVS Health,Health Care,-0.1683649519395835,-1.0
+2024-11-06,CVS,CVS Health,Health Care,0.1132995618876084,1.0
+2025-02-12,CVS,CVS Health,Health Care,0.1494545627388681,1.0
+2024-02-08,DIS,Walt Disney Company (The),Communication Services,0.1149890299178244,1.0
+2025-04-09,DIS,Walt Disney Company (The),Communication Services,0.1189427325166296,1.0
+2025-05-07,DIS,Walt Disney Company (The),Communication Services,0.1076272067740866,1.0
+2024-02-07,EMR,Emerson Electric,Industrials,0.1042859816332368,1.0
+2025-04-09,EMR,Emerson Electric,Industrials,0.1091875071396668,1.0
+2024-06-26,FDX,FedEx,Industrials,0.1552772188804003,1.0
+2024-09-20,FDX,FedEx,Industrials,-0.1523020024786243,-1.0
+2025-04-03,FDX,FedEx,Industrials,-0.1195497120926145,-1.0
+2025-04-09,FDX,FedEx,Industrials,0.10031802551383,1.0
+2025-04-04,GE,GE Aerospace,Industrials,-0.1109630756433006,-1.0
+2025-04-09,GE,GE Aerospace,Industrials,0.1056858005028307,1.0
+2024-11-06,GS,Goldman Sachs,Financials,0.13097780693617,1.0
+2025-04-09,GS,Goldman Sachs,Financials,0.1182337850991976,1.0
+2025-01-30,IBM,IBM,Information Technology,0.1296416750921227,1.0
+2024-11-06,JPM,JPMorgan Chase,Financials,0.1154454563701579,1.0
+2025-04-17,LLY,Eli Lilly and Company,Health Care,0.1429581944008651,1.0
+2025-05-01,LLY,Eli Lilly and Company,Health Care,-0.1166361290315541,-1.0
+2025-08-07,LLY,Eli Lilly and Company,Health Care,-0.1413642627280763,-1.0
+2025-07-22,LMT,Lockheed Martin,Industrials,-0.1081145629809438,-1.0
+2024-01-23,MMM,3M,Industrials,-0.1103498793290236,-1.0
+2024-07-26,MMM,3M,Industrials,0.2299060652784306,1.0
+2024-11-06,MS,Morgan Stanley,Financials,0.1161192167985647,1.0
+2025-04-09,MS,Morgan Stanley,Financials,0.1135479456062904,1.0
+2024-06-28,NKE,"Nike, Inc.",Consumer Discretionary,-0.1998088330189771,-1.0
+2025-04-03,NKE,"Nike, Inc.",Consumer Discretionary,-0.144396450554323,-1.0
+2025-04-09,NKE,"Nike, Inc.",Consumer Discretionary,0.1135723903376848,1.0
+2025-06-27,NKE,"Nike, Inc.",Consumer Discretionary,0.1519027878271659,1.0
+2024-05-30,NOW,ServiceNow,Information Technology,-0.1201307824658329,-1.0
+2024-07-25,NOW,ServiceNow,Information Technology,0.1339772922193307,1.0
+2025-01-30,NOW,ServiceNow,Information Technology,-0.1144426119671665,-1.0
+2025-04-09,NOW,ServiceNow,Information Technology,0.1351704781764078,1.0
+2025-04-24,NOW,ServiceNow,Information Technology,0.1548787907303768,1.0
+2024-03-12,ORCL,Oracle Corporation,Information Technology,0.1174977411063196,1.0
+2024-06-12,ORCL,Oracle Corporation,Information Technology,0.1331937036459425,1.0
+2024-09-10,ORCL,Oracle Corporation,Information Technology,0.1143755107934128,1.0
+2025-01-27,ORCL,Oracle Corporation,Information Technology,-0.1379084896846926,-1.0
+2025-04-09,ORCL,Oracle Corporation,Information Technology,0.1220080493901696,1.0
+2025-06-12,ORCL,Oracle Corporation,Information Technology,0.1331216248668152,1.0
+2024-10-22,PM,Philip Morris International,Consumer Staples,0.1046571139672818,1.0
+2025-02-06,PM,Philip Morris International,Consumer Staples,0.1094824702509054,1.0
+2024-07-16,SCHW,Charles Schwab Corporation,Financials,-0.101771854520809,-1.0
+2025-04-03,SPG,Simon Property Group,Real Estate,-0.101109113425016,-1.0
+2024-03-05,TGT,Target Corporation,Consumer Discretionary,0.1202071621971947,1.0
+2024-08-21,TGT,Target Corporation,Consumer Discretionary,0.1120033144461249,1.0
+2024-11-20,TGT,Target Corporation,Consumer Discretionary,-0.2141012558570685,-1.0
+2025-04-03,TGT,Target Corporation,Consumer Discretionary,-0.1086319742042194,-1.0
+2025-04-09,TGT,Target Corporation,Consumer Discretionary,0.1006083899263656,1.0
+2024-02-14,UBER,Uber,Industrials,0.1472677776012072,1.0
+2024-08-06,UBER,Uber,Industrials,0.1092681815041844,1.0
+2024-10-11,UBER,Uber,Industrials,0.1080595272947666,1.0
+2025-04-09,UBER,Uber,Industrials,0.1169509858005559,1.0
+2025-04-17,UNH,UnitedHealth Group,Health Care,-0.2237966405855177,-1.0
+2025-05-13,UNH,UnitedHealth Group,Health Care,-0.1778745602471005,-1.0
+2025-05-15,UNH,UnitedHealth Group,Health Care,-0.1092822297148297,-1.0
+2025-08-15,UNH,UnitedHealth Group,Health Care,0.1197834936867312,1.0
+2024-07-23,UPS,United Parcel Service,Industrials,-0.1205400210328128,-1.0
+2025-01-30,UPS,United Parcel Service,Industrials,-0.1411272623207431,-1.0
+2025-07-29,UPS,United Parcel Service,Industrials,-0.105729553679316,-1.0
+2024-11-06,WFC,Wells Fargo,Financials,0.1311065766190058,1.0
