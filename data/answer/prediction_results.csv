@@ -1,0 +1,5 @@
+model_type,model_name,decision,confidence,reason,search_date
+expert,gpt-5,sell,64,"Despite record Q4 revenue, Adobe’s significantly below-expectations full-year guidance and disappointing revenue forecast triggered a stock drop and raise execution risk around its AI-driven growth narrative.",2024-12-11
+crowd_1,gpt-5-nano,sell,68,"Q4 beat but full-year guidance miss and weaker revenue forecast signal downside risk, with market reaction suggesting further downside despite near-term strength.",2024-12-11
+crowd_2,gpt-5-nano,sell,72,"Q4 beat estimates but full-year guidance misses significantly and the stock dropped on the weak forecast, suggesting downside risk despite record revenue.",2024-12-11
+crowd_3,gpt-5-nano,sell,72,"Q4 beat but full-year guidance misses and the stock fell on the weak forecast, indicating downside risk despite strong quarterly results.",2024-12-11

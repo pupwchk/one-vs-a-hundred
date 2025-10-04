@@ -1,3 +1,5 @@
+'''사용하지 않는 스크립트'''
+
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
@@ -49,14 +51,12 @@ def get_expert_prediction(client, data):
     """
 
     try:
-        # GPT-5: 고도의 추론 능력과 상세한 응답 설정
+        # GPT-5: 깊은 추론을 위한 high reasoning effort
         response = client.chat.completions.create(
             model="openai/gpt-5",
             messages=[{"role": "user", "content": expert_prompt}],
-            reasoning_effort="high",  # 높은 추론 노력
-            verbosity="high",         # 상세한 응답
-            response_format={"type": "json_object"},
-            max_output_tokens=300
+            reasoning_effort="high",  # 깊은 추론
+            response_format={"type": "json_object"}
         )
         return json.loads(response.choices[0].message.content)
     except Exception as e:
@@ -79,14 +79,12 @@ def get_nano_prediction(client, data, agent_id):
     """
 
     try:
-        # GPT-5-nano: 최소 추론과 간결한 응답 설정
+        # GPT-5-nano: 최소 추론을 위한 minimal reasoning effort
         response = client.chat.completions.create(
             model="openai/gpt-5-nano",
             messages=[{"role": "user", "content": nano_prompt}],
-            reasoning_effort="minimal",  # 최소 추론 노력
-            verbosity="low",            # 간결한 응답
-            response_format={"type": "json_object"},
-            max_output_tokens=100
+            reasoning_effort="minimal",  # 최소 추론
+            response_format={"type": "json_object"}
         )
         return json.loads(response.choices[0].message.content)
     except Exception as e:
@@ -106,6 +104,57 @@ def aggregate_nano_results(nano_results):
         "sell_confidence_sum": sell_confidence,
         "individual_results": nano_results
     }
+
+def test_with_default_input():
+    """기본 입력값으로 테스트 실행"""
+    # 기본 테스트 데이터
+    default_data = {
+        'symbol': 'AAPL',
+        'search_date': '2024-12-11',
+        'titles': 'Apple Reports Strong Q4 Earnings Beat / Apple Announces New AI Features / Tech Stocks Rally on Market Optimism',
+        'descriptions': 'Apple exceeded Q4 earnings expectations with strong iPhone sales / Apple unveils advanced AI capabilities in latest software update / Technology sector sees broad gains as investors show confidence',
+        'sector': 'Technology'
+    }
+
+    # 클라이언트 생성
+    expert_client = create_expert_client()
+    nano_clients = [create_nano_client(i+1) for i in range(3)]
+
+    print("=== 기본 입력값 테스트: 1 Expert vs 3 Nano Models ===\n")
+    print(f"테스트 데이터: {default_data['symbol']} ({default_data['sector']})")
+    print(f"뉴스 제목들: {default_data['titles'][:100]}...\n")
+
+    # 전문가 예측 (깊은 추론)
+    print("🧠 Expert Analysis (GPT-5 with HIGH reasoning effort):")
+    expert_result = get_expert_prediction(expert_client, default_data)
+    print(f"Decision: {expert_result['decision']}")
+    print(f"Confidence: {expert_result['confidence']}%")
+    print(f"Reasoning: {expert_result['reason']}\n")
+
+    # 소형 모델 예측들 (최소 추론)
+    print("⚡ Nano Models Analysis (GPT-5-nano with MINIMAL reasoning effort):")
+    nano_results = []
+    for i, client in enumerate(nano_clients):
+        result = get_nano_prediction(client, default_data, i+1)
+        nano_results.append(result)
+        print(f"Nano Agent {i+1}: {result['decision']} (Confidence: {result['confidence']}%) - {result['reason']}")
+
+    # 집계 결과
+    aggregated = aggregate_nano_results(nano_results)
+    print(f"\n📊 Aggregated Nano Results:")
+    print(f"Final Decision: {aggregated['aggregated_decision']}")
+    print(f"BUY Confidence Sum: {aggregated['buy_confidence_sum']}")
+    print(f"SELL Confidence Sum: {aggregated['sell_confidence_sum']}")
+
+    # 최종 비교
+    print(f"\n🏆 Final Comparison:")
+    print(f"Expert (Deep Reasoning): {expert_result['decision']} ({expert_result['confidence']}%)")
+    print(f"Crowd (Minimal Reasoning): {aggregated['aggregated_decision']} (Total confidence difference: {abs(aggregated['buy_confidence_sum'] - aggregated['sell_confidence_sum'])})")
+
+    agreement = "✅ AGREE" if expert_result['decision'] == aggregated['aggregated_decision'] else "❌ DISAGREE"
+    print(f"Expert vs Crowd: {agreement}")
+
+    return expert_result, aggregated
 
 def main():
     """메인 실행 함수"""
@@ -149,4 +198,12 @@ def main():
     print(f"Expert vs Crowd: {agreement}")
 
 if __name__ == "__main__":
+    # 기본 입력값으로 테스트 실행
+    print("기본 입력값 테스트를 실행합니다...\n")
+    test_with_default_input()
+
+    print("\n" + "="*60 + "\n")
+
+    # 원래 메인 함수도 실행 (실제 데이터 사용)
+    print("실제 데이터로 분석을 실행합니다...\n")
     main()
