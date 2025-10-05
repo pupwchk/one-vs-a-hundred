@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-10-01T15:19:53.837075",
+  "total_events_processed": 160,
+  "total_news_collected": 137,
+  "error_count": 0,
+  "output_files": {
+    "csv_file": "../data/articles/csv/filtered_news_20251001_151420.csv",
+    "jsonl_file": "../data/articles/json/filtered_news_20251001_151420.jsonl"
+  }
+}
