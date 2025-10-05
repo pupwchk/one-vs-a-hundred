@@ -1,0 +1,76 @@
+symbol,search_date,prediction_date,model_type,model_name,decision,confidence,reason
+ADBE,2024-03-14,2024-03-15,expert,gpt-5,sell,68,Soft Q2 revenue guide drove a 10% drop; likely follow-through selling and estimate cuts
+ADBE,2024-03-14,2024-03-17,expert,gpt-5,sell,62,Post-earnings digestion and potential downgrades keep sentiment weak despite buyback
+ADBE,2024-03-14,2024-03-21,expert,gpt-5,buy,56,Selling pressure may fade; $25B buyback and earnings beat offer support for rebound
+ADBE,2024-03-14,2024-03-29,expert,gpt-5,buy,60,Estimates likely reset; stabilization from repurchases and mean reversion
+ADBE,2024-03-14,2024-04-13,expert,gpt-5,buy,66,Strong fundamentals plus large buyback could drive partial recovery after initial shock
+ADBE,2024-03-14,2024-03-15,crowd_1,gpt-5-nano,sell,75,Soft Q2 guidance after Q1 beat; about 10% intraday drop indicates negative near-term momentum.
+ADBE,2024-03-14,2024-03-17,crowd_1,gpt-5-nano,sell,65,Momentum likely to persist with cautious outlook; buyback provides some support but overall guidance remains weak.
+ADBE,2024-03-14,2024-03-21,crowd_1,gpt-5-nano,sell,50,"Signals are mixed; potential short-term rebound possible, but trend remains cautious."
+ADBE,2024-03-14,2024-03-29,crowd_1,gpt-5-nano,buy,60,Negative news may be priced in; buyback and brand strength could attract buyers if price stabilizes.
+ADBE,2024-03-14,2024-04-13,crowd_1,gpt-5-nano,buy,70,"With more time to digest results and ongoing buyback, long-term upside and valuation support look more favorable."
+ADBE,2024-03-14,2024-03-15,crowd_2,gpt-5-nano,sell,75,Adobe warned of soft Q2 revenue; stock fell ~10% on weaker guidance. Near-term weakness likely outweighs the Q1 beat.
+ADBE,2024-03-14,2024-03-17,crowd_2,gpt-5-nano,sell,70,Sustained negative guidance and cautious sentiment; buyback helps but may not immediately reverse the downtrend.
+ADBE,2024-03-14,2024-03-21,crowd_2,gpt-5-nano,buy,50,"Potential stabilization from the sizable buyback and past beat could create a rebound, but risk remains from ongoing weak outlook."
+ADBE,2024-03-14,2024-03-29,crowd_2,gpt-5-nano,buy,60,Medium-term value from capital return and improving sentiment could support a partial recovery; market has priced in some pessimism.
+ADBE,2024-03-14,2024-04-13,crowd_2,gpt-5-nano,buy,65,"Longer horizon may benefit from the buyback and potential earnings resilience, though the broader pessimistic outlook warrants caution."
+ADBE,2024-03-14,2024-03-15,crowd_3,gpt-5-nano,sell,78,Immediate negative catalyst: soft forecast and a ~10% drop on the news; near-term downside risk outweighs the earnings beat.
+ADBE,2024-03-14,2024-03-17,crowd_3,gpt-5-nano,sell,65,Guidance disappointment suggests continued short-term pressure and volatility before any potential rebound.
+ADBE,2024-03-14,2024-03-21,crowd_3,gpt-5-nano,sell,55,Overhang from weak guidance persists; risk-reward remains skewed to the downside in the near term.
+ADBE,2024-03-14,2024-03-29,crowd_3,gpt-5-nano,buy,60,Stock likely oversold; durable fundamentals and the $25B buyback could catalyze a rebound in the mid-term.
+ADBE,2024-03-14,2024-04-13,crowd_3,gpt-5-nano,buy,72,Valuation may be attractive after the pullback; buyback support and resilient demand underpin a longer-horizon recovery.
+ADBE,2024-03-14,2024-03-15,crowd_average,crowd_models,N/A,76.0,Average confidence across 3 crowd models
+ADBE,2024-03-14,2024-03-17,crowd_average,crowd_models,N/A,66.7,Average confidence across 3 crowd models
+ADBE,2024-03-14,2024-03-21,crowd_average,crowd_models,N/A,51.7,Average confidence across 3 crowd models
+ADBE,2024-03-14,2024-03-29,crowd_average,crowd_models,N/A,60.0,Average confidence across 3 crowd models
+ADBE,2024-03-14,2024-04-13,crowd_average,crowd_models,N/A,69.0,Average confidence across 3 crowd models
+ADBE,2024-06-13,2024-06-14,expert,gpt-5,sell,68,Post-earnings gap up 15–17% is overbought; likely profit-taking and resistance.
+ADBE,2024-06-13,2024-06-16,expert,gpt-5,sell,60,Near-term consolidation risk after a sharp AI-fueled surge.
+ADBE,2024-06-13,2024-06-20,expert,gpt-5,buy,55,Dip-buying likely as strong guidance and AI momentum underpin support.
+ADBE,2024-06-13,2024-06-28,expert,gpt-5,buy,65,Raised full-year outlook supports trend resumption after volatility cools.
+ADBE,2024-06-13,2024-07-13,expert,gpt-5,buy,70,Improved fundamentals and AI demand tailwinds favor higher base and continuation.
+ADBE,2024-06-13,2024-06-14,crowd_1,gpt-5-nano,buy,85,Adobe beat earnings and raised full-year revenue forecast; immediate positive momentum with shares up ~15–17%.
+ADBE,2024-06-13,2024-06-16,crowd_1,gpt-5-nano,buy,75,Momentum likely to persist in the short term given the strong results and optimistic guidance.
+ADBE,2024-06-13,2024-06-20,crowd_1,gpt-5-nano,buy,70,Near-term upside open with continued demand for Adobe's software; risk of volatility but bias remains bullish.
+ADBE,2024-06-13,2024-06-28,crowd_1,gpt-5-nano,buy,60,"Longer horizon supported by fundamentals, though potential for consolidation and macro factors may temper gains."
+ADBE,2024-06-13,2024-07-13,crowd_1,gpt-5-nano,buy,55,"Sustained uptrend possible, but valuation and broader market risk could temper upside over a longer horizon."
+ADBE,2024-06-13,2024-06-14,crowd_2,gpt-5-nano,buy,88,Earnings beat with raised full-year forecast; near-term upside and positive sentiment.
+ADBE,2024-06-13,2024-06-16,crowd_2,gpt-5-nano,buy,82,Momentum likely to persist after strong results and AI-driven demand signals.
+ADBE,2024-06-13,2024-06-20,crowd_2,gpt-5-nano,buy,78,Sustained fundamentals and favorable reactions suggest continued short-term upside.
+ADBE,2024-06-13,2024-06-28,crowd_2,gpt-5-nano,buy,70,"Longer horizon upside from continued software demand, though risk of consolidation exists."
+ADBE,2024-06-13,2024-07-13,crowd_2,gpt-5-nano,buy,65,"Longer-term catalysts intact, but valuation and broader market risk could cap gains."
+ADBE,2024-06-13,2024-06-14,crowd_3,gpt-5-nano,buy,60,Adobe beat estimates and raised full-year revenue forecast; immediate upside potential from strong momentum.
+ADBE,2024-06-13,2024-06-16,crowd_3,gpt-5-nano,buy,55,Short-term momentum likely to persist after earnings beat; risk of a brief pullback but fundamentals remain supportive.
+ADBE,2024-06-13,2024-06-20,crowd_3,gpt-5-nano,buy,50,"Upward trend may continue, but earnings-driven volatility could cause consolidation; longer-term outlook still positive."
+ADBE,2024-06-13,2024-06-28,crowd_3,gpt-5-nano,buy,45,"Positive fundamentals, but macro factors and market cycles could weigh on mid-term gains; gradual appreciation possible."
+ADBE,2024-06-13,2024-07-13,crowd_3,gpt-5-nano,buy,40,"Extended horizon subject to broader market conditions; tech demand looks solid, yet valuations and macro headwinds may cap upside."
+ADBE,2024-06-13,2024-06-14,crowd_average,crowd_models,N/A,77.7,Average confidence across 3 crowd models
+ADBE,2024-06-13,2024-06-16,crowd_average,crowd_models,N/A,70.7,Average confidence across 3 crowd models
+ADBE,2024-06-13,2024-06-20,crowd_average,crowd_models,N/A,66.0,Average confidence across 3 crowd models
+ADBE,2024-06-13,2024-06-28,crowd_average,crowd_models,N/A,58.3,Average confidence across 3 crowd models
+ADBE,2024-06-13,2024-07-13,crowd_average,crowd_models,N/A,53.3,Average confidence across 3 crowd models
+ADBE,2024-12-11,2024-12-12,expert,gpt-5,sell,78,Stock dropped on disappointing revenue forecast; near-term momentum negative
+ADBE,2024-12-11,2024-12-14,expert,gpt-5,sell,70,Post-earnings drift likely after weak full-year guidance
+ADBE,2024-12-11,2024-12-18,expert,gpt-5,sell,60,Guidance miss and AI credibility questions may cap any bounce
+ADBE,2024-12-11,2024-12-26,expert,gpt-5,sell,55,Ongoing estimate cuts and sentiment reset could weigh through two weeks
+ADBE,2024-12-11,2025-01-10,expert,gpt-5,buy,58,Record Q4 and strong fundamentals may drive rebound once lowered outlook is priced in
+ADBE,2024-12-11,2024-12-12,crowd_1,gpt-5-nano,sell,75,Disappointing full-year guidance despite Q4 beat; near-term downside pressure.
+ADBE,2024-12-11,2024-12-14,crowd_1,gpt-5-nano,sell,70,Continued negative reaction to guidance; risk-off mood in software equities.
+ADBE,2024-12-11,2024-12-18,crowd_1,gpt-5-nano,sell,60,Short-term price action likely to test support levels amid mixed signals.
+ADBE,2024-12-11,2024-12-26,crowd_1,gpt-5-nano,buy,50,Possible rebound as focus shifts to long-term AI strategy and cash flow potential.
+ADBE,2024-12-11,2025-01-10,crowd_1,gpt-5-nano,buy,65,Longer-term upside if AI-driven offerings strengthen growth; risk premium gradually normalizes.
+ADBE,2024-12-11,2024-12-12,crowd_2,gpt-5-nano,buy,50,API error or parsing failed.
+ADBE,2024-12-11,2024-12-14,crowd_2,gpt-5-nano,buy,50,API error or parsing failed.
+ADBE,2024-12-11,2024-12-18,crowd_2,gpt-5-nano,buy,50,API error or parsing failed.
+ADBE,2024-12-11,2024-12-26,crowd_2,gpt-5-nano,buy,50,API error or parsing failed.
+ADBE,2024-12-11,2025-01-10,crowd_2,gpt-5-nano,buy,50,API error or parsing failed.
+ADBE,2024-12-11,2024-12-12,crowd_3,gpt-5-nano,sell,75,Disappointing full-year guidance despite Q4 beat; near-term downside risk and negative sentiment likely.
+ADBE,2024-12-11,2024-12-14,crowd_3,gpt-5-nano,sell,70,Guidance miss continues to weigh on the stock; lack of immediate catalysts for a rebound.
+ADBE,2024-12-11,2024-12-18,crowd_3,gpt-5-nano,buy,55,Potential short-term rebound after initial sell-off; long-term AI-driven growth thesis could support upside.
+ADBE,2024-12-11,2024-12-26,crowd_3,gpt-5-nano,buy,60,Improved visibility on AI monetization and record Q4 revenue; mid-term upside potential.
+ADBE,2024-12-11,2025-01-10,crowd_3,gpt-5-nano,buy,65,Longer-horizon fundamentals look favorable with ongoing AI product traction and recurring revenue; macro risks priced in.
+ADBE,2024-12-11,2024-12-12,crowd_average,crowd_models,N/A,66.7,Average confidence across 3 crowd models
+ADBE,2024-12-11,2024-12-14,crowd_average,crowd_models,N/A,63.3,Average confidence across 3 crowd models
+ADBE,2024-12-11,2024-12-18,crowd_average,crowd_models,N/A,55.0,Average confidence across 3 crowd models
+ADBE,2024-12-11,2024-12-26,crowd_average,crowd_models,N/A,53.3,Average confidence across 3 crowd models
+ADBE,2024-12-11,2025-01-10,crowd_average,crowd_models,N/A,60.0,Average confidence across 3 crowd models
