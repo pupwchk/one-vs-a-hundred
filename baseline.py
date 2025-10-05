@@ -1,5 +1,6 @@
 import json
 import os
+import random
 from abc import ABC, abstractmethod
 from typing import List, Dict, TypedDict, Optional, Any 
 from openai import OpenAI
@@ -23,19 +24,65 @@ class AgentPrediction(TypedDict):
     day_15: PeriodPrediction
     day_30: PeriodPrediction
 
+# --- 페르소나 데이터 로딩 함수 ---
+def load_persona_data(file_path: str) -> List[Dict]:
+    """페르소나 데이터를 로딩합니다."""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"페르소나 데이터 로딩 오류: {e}")
+        return []
+
+def select_random_personas(persona_data: List[Dict], num_personas: int) -> List[Dict]:
+    """페르소나 데이터에서 랜덤하게 선택합니다."""
+    return random.sample(persona_data, min(num_personas, len(persona_data)))
+
+def format_persona_profile(persona: Dict) -> str:
+    """페르소나 프로필을 문자열로 포맷팅합니다."""
+    profile = persona.get("PERSONA_PROFILE", {})
+    
+    identity = profile.get("Identity", {})
+    socio = profile.get("Socio_Economics", {})
+    outlook = profile.get("Outlook_and_Trust", {})
+    info_habit = profile.get("Information_Habit", {})
+    
+    persona_text = f"""당신은 다음 페르소나를 가진 투자자입니다:
+- 국적: {identity.get('Nationality', 'Unknown')}
+- 나이: {identity.get('Age', 'Unknown')}
+- 성별: {identity.get('Gender', 'Unknown')}
+- 교육수준: {identity.get('Education', 'Unknown')}
+- 직업: {socio.get('Occupation', 'Unknown')}
+- 소득수준: {socio.get('Income_Decile', 'Unknown')}
+- 정치성향: {socio.get('Left_Right_Position', 'Unknown')}
+- 전반적 행복도: {outlook.get('Overall_Happiness', 'Unknown')}
+- 국가경제 전망: {outlook.get('Natl_Econ_View', 'Unknown')}
+- 가계재정 전망: {outlook.get('House_Fin_View', 'Unknown')}
+- 제도신뢰도: {outlook.get('Inst_Trust', 'Unknown')}
+- 대인신뢰도: {outlook.get('Interpersonal_Trust', 'Unknown')}
+- 정치관심도: {info_habit.get('Political_Interest', 'Unknown')}
+- 뉴스빈도: {info_habit.get('News_Frequency', 'Unknown')}
+- 인터넷사용빈도: {info_habit.get('Internet_Frequency', 'Unknown')}"""
+    
+    return persona_text
+
 # --- 프롬프트 생성 함수 ---
-def create_stock_prompt(stock_data: str) -> str:
+def create_stock_prompt(stock_data: str, persona_profile: Optional[str] = None) -> str:
     """주식 예측을 위한 표준 프롬프트를 생성합니다."""
     # 다중 기간 매수/매도 결정을 위한 프롬프트
-    return (
+    base_prompt = (
         "You are a stock analyst. Based on the provided data, decide whether to 'buy' or 'sell' the stock for different time periods: 1 day, 3 days, 7 days, 15 days, and 30 days from the data date. "
         "For each period, provide your confidence level as a single integer from 0 to 100 and a brief reason for your decision. "
         "Your response MUST be a JSON object with five keys: 'day_1', 'day_3', 'day_7', 'day_15', 'day_30'. "
         "Each period should have 'decision' (buy/sell), 'confidence' (0-100), and 'reason' (brief explanation).\n\n"
         "Example: {\"day_1\": {\"decision\": \"buy\", \"confidence\": 75, \"reason\": \"Strong Q4 results\"}, \"day_3\": {\"decision\": \"sell\", \"confidence\": 60, \"reason\": \"Market volatility\"}, ...}\n\n"
         "Respond ONLY with a valid JSON object. Do not include any extra text.\n\n"
-        f"Data: {stock_data}"
     )
+    
+    if persona_profile:
+        base_prompt = f"{persona_profile}\n\n{base_prompt}"
+    
+    return f"{base_prompt}Data: {stock_data}"
 
 # --- 주식 심볼 추출 함수 ---
 def extract_stock_symbol(stock_data: str) -> str:
@@ -108,14 +155,15 @@ class OpenAIAgent(BaseModelAgent):
         "day_30": {"decision": "buy", "confidence": 50, "reason": "API error or parsing failed."}
     }
 
-    def __init__(self, model_name: str, client: OpenAI, site_url: str, app_name: str):
+    def __init__(self, model_name: str, client: OpenAI, site_url: str, app_name: str, persona_profile: Optional[str] = None):
         self.model_name = model_name
         self.client = client
         self.site_url = site_url
         self.app_name = app_name
+        self.persona_profile = persona_profile
 
     def predict(self, stock_data: str) -> AgentPrediction:
-        prompt = create_stock_prompt(stock_data)
+        prompt = create_stock_prompt(stock_data, self.persona_profile)
         effort_level = "high" if self.model_name == 'gpt-5' else "low"
         
         try:
@@ -247,9 +295,27 @@ if __name__ == "__main__":
     
     CROWD_MODEL = "gpt-5-nano"
     NUM_CROWD_AGENTS = 3
-    crowd_agents = [
-        OpenAIAgent(model_name=CROWD_MODEL, client=client, site_url=YOUR_SITE_URL, app_name=YOUR_APP_NAME) for _ in range(NUM_CROWD_AGENTS)
-    ]
+    
+    # 페르소나 데이터 로딩
+    persona_file_path = "data/persona/json/persona_profiles_1.json"
+    persona_data = load_persona_data(persona_file_path)
+    
+    # 랜덤하게 페르소나 선택
+    selected_personas = select_random_personas(persona_data, NUM_CROWD_AGENTS)
+    
+    # crowd agents 생성 (각각 다른 페르소나 적용)
+    crowd_agents = []
+    for i, persona in enumerate(selected_personas):
+        persona_profile = format_persona_profile(persona)
+        agent = OpenAIAgent(
+            model_name=CROWD_MODEL, 
+            client=client, 
+            site_url=YOUR_SITE_URL, 
+            app_name=YOUR_APP_NAME,
+            persona_profile=persona_profile
+        )
+        crowd_agents.append(agent)
+        print(f"Crowd Agent {i+1} 페르소나: {persona.get('PROMPT_ID', 'Unknown')} - {persona.get('PERSONA_PROFILE', {}).get('Identity', {}).get('Nationality', 'Unknown')}")
 
     # --- 2. 예측 시스템 초기화 및 데이터 정의 (원본 유지) ---
     predictor = StockPredictor(expert_agent, crowd_agents)
@@ -340,19 +406,6 @@ if __name__ == "__main__":
                 "reason": crowd_pred.get("reason", "")
             })
     
-    # 집계 결과도 추가
-    for period in periods:
-        agg_result = result['aggregated_results'][period]
-        rows.append({
-            "symbol": stock_symbol,
-            "search_date": stock_data_dict["search_date"],
-            "prediction_date": prediction_dates[period],
-            "model_type": "aggregated",
-            "model_name": "ensemble",
-            "decision": agg_result["final_decision"],
-            "confidence": round(agg_result["average_confidence"], 1),
-            "reason": f"Buy: {agg_result['buy_confidence_sum']}, Sell: {agg_result['sell_confidence_sum']}"
-        })
     
     # 예측 날짜별 crowd agent들만의 평균 신뢰도 추가
     for period in periods:
