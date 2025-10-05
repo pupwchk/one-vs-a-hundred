@@ -1,3 +1,5 @@
+'''TO DO: 링크에 접속해서 뉴스 본문까지 모두 긁어오기.'''
+
 import pandas as pd
 import json
 import os
