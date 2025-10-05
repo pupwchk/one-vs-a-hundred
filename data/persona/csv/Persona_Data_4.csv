@@ -1,0 +1,101 @@
+cntry,agea,Gender,Education_Level,Occupation_Code_Name,hinctnta,Pol_Interest_Level,lrscale,Vote_Status,Interpersonal_Trust,Institutional_Trust,National_Econ_Sat,Household_Fin_Sat,Pol_News_Freq,Internet_Use_Freq,happy
+ME,64.0,Female,Low (Primary/Lower Secondary),9-Elementary Occupations,3.0,Middle,5.0,Yes,Medium,Medium,Middle,Middle,Middle,Rarely,5.0
+SI,59.0,Female,Tertiary/Bachelor's Degree,3-Technicians and Associate Professionals,5.0,Low,3.0,Yes,Medium,Medium,Middle,Optimistic,Middle,Often,10.0
+GR,56.0,Male,Upper Secondary/Vocational,9-Elementary Occupations,4.0,High,5.0,No,Low,Low,Pessimistic,Middle,Middle,Often,2.0
+FR,57.0,Male,Upper Secondary/Vocational,9-Elementary Occupations,3.0,Middle,5.0,Yes,Low,Low,Pessimistic,Optimistic,Often,Rarely,5.0
+ME,68.0,Male,Upper Secondary/Vocational,9-Elementary Occupations,3.0,High,5.0,Yes,Low,Medium,Pessimistic,Middle,Rarely,Rarely,4.0
+ES,43.0,Female,Upper Secondary/Vocational,9-Elementary Occupations,4.0,Middle,10.0,No,Low,Medium,Optimistic,Optimistic,Middle,Rarely,10.0
+SK,38.0,Female,Upper Secondary/Vocational,3-Technicians and Associate Professionals,4.0,Middle,5.0,No,Low,Low,Pessimistic,Middle,Often,Often,4.0
+AT,56.0,Female,Upper Secondary/Vocational,4-Clerical Support Workers,3.0,Middle,5.0,Yes,Medium,Low,Pessimistic,Middle,Middle,Rarely,5.0
+DE,35.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,4.0,Middle,5.0,Yes,Low,Low,Pessimistic,Optimistic,Often,Often,5.0
+ME,45.0,Female,Low (Primary/Lower Secondary),9-Elementary Occupations,4.0,High,3.0,Yes,Low,Medium,Middle,Pessimistic,Middle,Rarely,10.0
+BG,41.0,Female,Upper Secondary/Vocational,3-Technicians and Associate Professionals,10.0,High,4.0,No,Low,Low,Pessimistic,Optimistic,Rarely,Often,10.0
+BG,62.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,5.0,Middle,5.0,Yes,Medium,Low,Middle,Middle,Often,Often,5.0
+BG,62.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,5.0,Middle,2.0,Yes,Low,Low,Pessimistic,Optimistic,Often,Rarely,5.0
+ME,64.0,Male,Low (Primary/Lower Secondary),9-Elementary Occupations,4.0,Middle,5.0,Yes,Low,Medium,Middle,Middle,Middle,Rarely,5.0
+IE,50.0,Female,Tertiary/Bachelor's Degree,9-Elementary Occupations,10.0,High,5.0,Yes,Medium,Low,Middle,Optimistic,Rarely,Often,10.0
+FR,43.0,Female,Upper Secondary/Vocational,3-Technicians and Associate Professionals,10.0,Low,5.0,Yes,Low,Low,Pessimistic,Optimistic,Often,Often,10.0
+IT,67.0,Female,Low (Primary/Lower Secondary),9-Elementary Occupations,3.0,High,4.0,Yes,Medium,Medium,Middle,Optimistic,Often,Often,4.0
+FR,18.0,Male,Low (Primary/Lower Secondary),9-Elementary Occupations,10.0,High,5.0,,Low,Low,Middle,Optimistic,Rarely,Often,5.0
+IT,31.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,3.0,Middle,3.0,Yes,Low,Low,Pessimistic,Optimistic,Rarely,Rarely,5.0
+GR,25.0,Male,Upper Secondary/Vocational,5-Service and Sales Workers,4.0,High,5.0,No,Low,Medium,Middle,Optimistic,Rarely,Often,5.0
+ES,45.0,Male,Low (Primary/Lower Secondary),7-Craft and Related Trades Workers,2.0,Middle,5.0,No,Low,Medium,Pessimistic,Pessimistic,Often,Often,10.0
+ME,39.0,Male,Tertiary/Bachelor's Degree,"8-Plant and Machine Operators, and Assemblers",5.0,Middle,4.0,No,Medium,Medium,Middle,Optimistic,Often,Rarely,5.0
+SI,52.0,Male,Upper Secondary/Vocational,5-Service and Sales Workers,1.0,Middle,0.0,Yes,Medium,Medium,Pessimistic,Optimistic,Middle,Rarely,3.0
+ME,64.0,Female,Low (Primary/Lower Secondary),5-Service and Sales Workers,3.0,Middle,5.0,Yes,Medium,Medium,Middle,Middle,Middle,Rarely,4.0
+GR,64.0,Female,Upper Secondary/Vocational,7-Craft and Related Trades Workers,3.0,Middle,5.0,No,Medium,Low,Pessimistic,Optimistic,Middle,Rarely,4.0
+GB,37.0,Male,Tertiary/Bachelor's Degree,2-Professionals,5.0,Low,5.0,,Low,Low,Pessimistic,Optimistic,Rarely,Often,5.0
+PL,51.0,Male,Low (Primary/Lower Secondary),5-Service and Sales Workers,1.0,Middle,0.0,Yes,Low,Medium,Pessimistic,Optimistic,Rarely,Rarely,10.0
+FR,46.0,Female,Upper Secondary/Vocational,3-Technicians and Associate Professionals,3.0,Middle,1.0,No,Medium,Low,Pessimistic,Middle,Rarely,Often,10.0
+DE,82.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,3.0,Middle,3.0,Yes,Low,Medium,Middle,Optimistic,Middle,Rarely,10.0
+GB,33.0,Female,Low (Primary/Lower Secondary),9-Elementary Occupations,2.0,Middle,5.0,Yes,Medium,Low,Middle,Middle,Rarely,Often,4.0
+PT,49.0,Female,Upper Secondary/Vocational,4-Clerical Support Workers,2.0,Middle,0.0,Yes,Low,Low,Pessimistic,Pessimistic,Often,Often,4.0
+IE,41.0,Male,Low (Primary/Lower Secondary),7-Craft and Related Trades Workers,3.0,High,5.0,No,Low,Medium,Middle,Optimistic,Often,Often,5.0
+RS,64.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,5.0,Middle,5.0,No,Low,Low,Pessimistic,Middle,Rarely,Rarely,4.0
+RS,49.0,Male,Tertiary/Bachelor's Degree,3-Technicians and Associate Professionals,5.0,Middle,5.0,Yes,Low,Medium,Pessimistic,Optimistic,Often,Rarely,3.0
+BG,60.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,5.0,Middle,3.0,Yes,Low,Low,Pessimistic,Optimistic,Rarely,Often,3.0
+ME,54.0,Male,Upper Secondary/Vocational,5-Service and Sales Workers,3.0,High,2.0,No,Medium,Low,Middle,Pessimistic,Rarely,Rarely,4.0
+LV,56.0,Male,Low (Primary/Lower Secondary),9-Elementary Occupations,2.0,Middle,0.0,Yes,Low,Low,Pessimistic,Pessimistic,Often,Rarely,2.0
+SI,57.0,Female,Upper Secondary/Vocational,4-Clerical Support Workers,4.0,Middle,0.0,Yes,Low,Low,Pessimistic,Optimistic,Middle,Rarely,3.0
+BG,79.0,Female,Upper Secondary/Vocational,7-Craft and Related Trades Workers,5.0,Middle,5.0,No,Medium,Low,Pessimistic,Middle,Often,Rarely,5.0
+BG,67.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,2.0,Middle,4.0,Yes,Medium,Low,Pessimistic,Middle,Often,Often,5.0
+DE,34.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,10.0,Middle,1.0,Yes,Medium,Low,Middle,Optimistic,Rarely,Often,10.0
+SI,69.0,Male,Upper Secondary/Vocational,"8-Plant and Machine Operators, and Assemblers",4.0,Middle,5.0,Yes,Medium,Medium,Middle,Optimistic,Often,Rarely,4.0
+HR,26.0,Female,Upper Secondary/Vocational,7-Craft and Related Trades Workers,10.0,High,0.0,No,Medium,Low,Middle,Optimistic,Rarely,Often,10.0
+NL,50.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,5.0,Middle,5.0,No,Medium,Low,Pessimistic,Optimistic,Often,Rarely,4.0
+HR,68.0,Male,Upper Secondary/Vocational,5-Service and Sales Workers,5.0,Middle,4.0,Yes,Medium,Medium,Pessimistic,Optimistic,Middle,Rarely,5.0
+BG,49.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,5.0,Middle,4.0,Yes,Low,Low,Pessimistic,Optimistic,Often,Rarely,5.0
+PL,39.0,Male,Upper Secondary/Vocational,"6-Skilled Agricultural, Forestry and Fishery Workers",3.0,Middle,3.0,Yes,Low,Low,Pessimistic,Optimistic,Rarely,Rarely,10.0
+GR,70.0,Male,Upper Secondary/Vocational,"6-Skilled Agricultural, Forestry and Fishery Workers",4.0,Middle,5.0,Yes,Low,Low,Pessimistic,Optimistic,Often,Often,3.0
+GB,55.0,Female,Tertiary/Bachelor's Degree,7-Craft and Related Trades Workers,1.0,Middle,5.0,Yes,Low,Low,Pessimistic,Optimistic,Rarely,Rarely,5.0
+HU,58.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,5.0,Middle,2.0,Yes,Low,Low,Pessimistic,Middle,Often,Rarely,4.0
+CY,37.0,Female,Upper Secondary/Vocational,9-Elementary Occupations,3.0,High,4.0,No,Low,Medium,Pessimistic,Middle,Middle,Rarely,3.0
+SE,72.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,4.0,Middle,3.0,Yes,Medium,Low,Middle,Optimistic,Middle,Rarely,10.0
+PT,28.0,Female,Upper Secondary/Vocational,9-Elementary Occupations,2.0,High,5.0,No,Low,Medium,Middle,Optimistic,Rarely,Often,5.0
+HR,71.0,Male,Low (Primary/Lower Secondary),9-Elementary Occupations,3.0,Low,5.0,Yes,Medium,Medium,Pessimistic,Optimistic,Often,Rarely,5.0
+LV,57.0,Female,Tertiary/Bachelor's Degree,3-Technicians and Associate Professionals,4.0,Middle,5.0,Yes,Medium,Low,Pessimistic,Middle,Often,Rarely,4.0
+IS,71.0,Female,Tertiary/Bachelor's Degree,5-Service and Sales Workers,1.0,Low,5.0,Yes,Medium,Low,Pessimistic,Pessimistic,Rarely,Rarely,10.0
+HR,19.0,Male,Upper Secondary/Vocational,9-Elementary Occupations,3.0,Middle,5.0,,Low,High,Pessimistic,Optimistic,Rarely,Often,10.0
+BE,43.0,Male,Tertiary/Bachelor's Degree,"8-Plant and Machine Operators, and Assemblers",1.0,High,1.0,Yes,High,Low,Pessimistic,Middle,Rarely,Rarely,10.0
+FR,54.0,Male,Tertiary/Bachelor's Degree,2-Professionals,10.0,Middle,5.0,No,Low,Low,Pessimistic,Optimistic,Often,Often,5.0
+IT,55.0,Male,Low (Primary/Lower Secondary),9-Elementary Occupations,2.0,Middle,4.0,Yes,Low,Low,Pessimistic,Middle,Middle,Rarely,5.0
+ME,56.0,Female,Low (Primary/Lower Secondary),9-Elementary Occupations,3.0,Middle,5.0,Yes,Medium,Medium,Middle,Pessimistic,Rarely,Rarely,5.0
+SI,51.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,4.0,Middle,0.0,Yes,Medium,Low,Pessimistic,Optimistic,Rarely,Rarely,5.0
+ME,32.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,3.0,Middle,5.0,No,Medium,Medium,Middle,Middle,Rarely,Often,5.0
+DE,44.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,3.0,Low,0.0,Yes,Low,Medium,Middle,Optimistic,Middle,Rarely,5.0
+LV,68.0,Female,Tertiary/Bachelor's Degree,9-Elementary Occupations,2.0,Middle,4.0,Yes,Medium,Low,Pessimistic,Pessimistic,Often,Rarely,2.0
+HU,25.0,Male,Tertiary/Bachelor's Degree,"6-Skilled Agricultural, Forestry and Fishery Workers",3.0,Middle,5.0,Yes,Medium,Low,Pessimistic,Optimistic,Rarely,Often,5.0
+AT,90.0,Female,Upper Secondary/Vocational,9-Elementary Occupations,3.0,Middle,1.0,Yes,Low,Low,Pessimistic,Optimistic,Middle,Rarely,5.0
+NL,62.0,Female,Low (Primary/Lower Secondary),7-Craft and Related Trades Workers,1.0,Middle,5.0,No,Medium,Medium,Middle,Middle,Middle,Rarely,4.0
+IE,46.0,Female,Tertiary/Bachelor's Degree,5-Service and Sales Workers,5.0,High,5.0,Yes,Medium,Medium,Middle,Optimistic,Rarely,Rarely,10.0
+GR,40.0,Male,Low (Primary/Lower Secondary),7-Craft and Related Trades Workers,5.0,Middle,2.0,Yes,Low,Low,Pessimistic,Middle,Often,Rarely,5.0
+IT,52.0,Male,Low (Primary/Lower Secondary),"8-Plant and Machine Operators, and Assemblers",3.0,Middle,5.0,No,Low,Medium,Pessimistic,Middle,Rarely,Rarely,3.0
+NO,24.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,3.0,High,5.0,Yes,Low,Medium,Middle,Optimistic,Rarely,Often,3.0
+SE,24.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,5.0,Middle,0.0,,High,Low,Pessimistic,Middle,Middle,Often,10.0
+SE,73.0,Female,Low (Primary/Lower Secondary),3-Technicians and Associate Professionals,3.0,Middle,0.0,Yes,High,Medium,Middle,Optimistic,Rarely,Rarely,10.0
+ES,23.0,Male,Upper Secondary/Vocational,9-Elementary Occupations,5.0,Middle,5.0,No,Medium,Medium,Middle,Optimistic,Often,Often,5.0
+BG,23.0,Female,Low (Primary/Lower Secondary),9-Elementary Occupations,5.0,High,5.0,Yes,Low,Low,Pessimistic,Pessimistic,Rarely,Often,4.0
+BG,31.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,10.0,Middle,5.0,Yes,Low,Low,Pessimistic,Middle,Rarely,Often,2.0
+LV,53.0,Female,Tertiary/Bachelor's Degree,9-Elementary Occupations,3.0,Middle,0.0,Yes,Low,Low,Pessimistic,Optimistic,Rarely,Rarely,10.0
+BG,63.0,Male,Low (Primary/Lower Secondary),9-Elementary Occupations,4.0,Middle,4.0,Yes,Medium,Low,Pessimistic,Pessimistic,Rarely,Rarely,3.0
+AT,27.0,Female,Upper Secondary/Vocational,9-Elementary Occupations,3.0,Middle,0.0,,Low,Medium,Middle,Optimistic,Rarely,Rarely,10.0
+LT,38.0,Male,Low (Primary/Lower Secondary),9-Elementary Occupations,5.0,High,5.0,Yes,Medium,High,Middle,Optimistic,Rarely,Often,10.0
+GB,75.0,Female,Low (Primary/Lower Secondary),4-Clerical Support Workers,1.0,Middle,4.0,No,Medium,Low,Middle,Optimistic,Middle,Rarely,10.0
+SK,37.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,5.0,Middle,5.0,Yes,Low,Medium,Middle,Optimistic,Rarely,Often,5.0
+GR,61.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,4.0,Middle,3.0,Yes,Medium,Low,Pessimistic,Middle,Often,Rarely,4.0
+SI,57.0,Female,Tertiary/Bachelor's Degree,9-Elementary Occupations,1.0,Middle,5.0,Yes,Medium,Low,Middle,Optimistic,Often,Rarely,10.0
+GR,21.0,Male,Upper Secondary/Vocational,9-Elementary Occupations,3.0,High,5.0,No,Low,Low,Pessimistic,Optimistic,Rarely,Often,3.0
+PT,68.0,Female,Upper Secondary/Vocational,4-Clerical Support Workers,1.0,High,5.0,Yes,High,Low,Pessimistic,Middle,Often,Rarely,10.0
+PT,79.0,Male,Low (Primary/Lower Secondary),3-Technicians and Associate Professionals,4.0,High,0.0,Yes,Low,Low,Middle,Optimistic,Often,Often,10.0
+AT,75.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,3.0,Middle,5.0,Yes,Low,Low,Pessimistic,Middle,Often,Rarely,10.0
+ME,69.0,Male,Low (Primary/Lower Secondary),9-Elementary Occupations,3.0,Middle,4.0,Yes,Medium,Medium,Middle,Pessimistic,Middle,Rarely,5.0
+DE,29.0,Female,Upper Secondary/Vocational,3-Technicians and Associate Professionals,4.0,Middle,5.0,Yes,Medium,Low,Middle,Optimistic,Rarely,Often,10.0
+DE,27.0,Female,Tertiary/Bachelor's Degree,3-Technicians and Associate Professionals,5.0,Middle,5.0,,Medium,Medium,Middle,Optimistic,Rarely,Often,5.0
+ME,68.0,Male,Tertiary/Bachelor's Degree,7-Craft and Related Trades Workers,4.0,High,5.0,Yes,Low,Low,Middle,Middle,Middle,Rarely,5.0
+FR,54.0,Male,Upper Secondary/Vocational,7-Craft and Related Trades Workers,2.0,High,5.0,No,Medium,Medium,Pessimistic,Middle,Often,Rarely,4.0
+BG,49.0,Male,Upper Secondary/Vocational,9-Elementary Occupations,2.0,High,5.0,No,Low,Low,Pessimistic,Pessimistic,Middle,Rarely,2.0
+NO,45.0,Male,Upper Secondary/Vocational,"8-Plant and Machine Operators, and Assemblers",3.0,Middle,5.0,Yes,Medium,Low,Pessimistic,Optimistic,Often,Rarely,10.0
+SI,26.0,Male,Upper Secondary/Vocational,9-Elementary Occupations,3.0,Middle,5.0,No,Medium,Low,Middle,Optimistic,Rarely,Rarely,10.0
+ES,59.0,Male,Low (Primary/Lower Secondary),5-Service and Sales Workers,1.0,Low,0.0,Yes,Medium,Medium,Pessimistic,Pessimistic,Often,Often,5.0
+HR,34.0,Male,Upper Secondary/Vocational,5-Service and Sales Workers,4.0,High,5.0,No,Low,Low,Pessimistic,Optimistic,Rarely,Often,10.0
+IS,40.0,Female,Upper Secondary/Vocational,5-Service and Sales Workers,1.0,Middle,4.0,Yes,Medium,Low,Pessimistic,Optimistic,Rarely,Often,5.0

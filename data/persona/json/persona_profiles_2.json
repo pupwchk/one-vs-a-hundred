@@ -1,0 +1,2902 @@
+[
+    {
+        "PROMPT_ID": "P0",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Portugal",
+                "Age": "59 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P1",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Lithuania",
+                "Age": "38 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "High",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P2",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "39 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P3",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Italy",
+                "Age": "52 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "8-Plant and Machine Operators, and Assemblers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "3/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P4",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Iceland",
+                "Age": "38 years old",
+                "Gender": "Female",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "3 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P5",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "France",
+                "Age": "19 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "10 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Low",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P6",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Poland",
+                "Age": "44 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "1-Managers",
+                "Income_Decile": "10 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P7",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Belgium",
+                "Age": "56 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "8-Plant and Machine Operators, and Assemblers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "10 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P8",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Germany",
+                "Age": "45 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "3-Technicians and Associate Professionals",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P9",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "France",
+                "Age": "48 years old",
+                "Gender": "Female",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "3-Technicians and Associate Professionals",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "2 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P10",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Lithuania",
+                "Age": "64 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "6-Skilled Agricultural, Forestry and Fishery Workers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "10 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "2/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P11",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Portugal",
+                "Age": "56 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P12",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "44 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "2-Professionals",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P13",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Spain",
+                "Age": "74 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "8-Plant and Machine Operators, and Assemblers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "High"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P14",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Portugal",
+                "Age": "79 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "3-Technicians and Associate Professionals",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P15",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Portugal",
+                "Age": "39 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "8-Plant and Machine Operators, and Assemblers",
+                "Income_Decile": "10 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P16",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Lithuania",
+                "Age": "43 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "4-Clerical Support Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "3 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P17",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Slovenia",
+                "Age": "35 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P18",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Slovakia",
+                "Age": "51 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P19",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Belgium",
+                "Age": "16 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "2/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": NaN
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P20",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "52 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P21",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Croatia",
+                "Age": "30 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P22",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "25 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P23",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Spain",
+                "Age": "46 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "2/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P24",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Germany",
+                "Age": "68 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "3 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P25",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Cyprus",
+                "Age": "74 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P26",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "United Kingdom",
+                "Age": "38 years old",
+                "Gender": "Female",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "10 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "1/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P27",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Serbia",
+                "Age": "55 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "4-Clerical Support Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "3/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P28",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Spain",
+                "Age": "50 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Low",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": NaN
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P29",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Hungary",
+                "Age": "43 years old",
+                "Gender": "Female",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "4-Clerical Support Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "2 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "2/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P30",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "59 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P31",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Serbia",
+                "Age": "24 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Optimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P32",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "49 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P33",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Spain",
+                "Age": "75 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P34",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Bulgaria",
+                "Age": "32 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P35",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "53 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P36",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "United Kingdom",
+                "Age": "74 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "3-Technicians and Associate Professionals",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P37",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Belgium",
+                "Age": "30 years old",
+                "Gender": "Female",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "2-Professionals",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P38",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Poland",
+                "Age": "42 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P39",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Greece",
+                "Age": "64 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P40",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Poland",
+                "Age": "39 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "8-Plant and Machine Operators, and Assemblers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "0/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P41",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Sweden",
+                "Age": "48 years old",
+                "Gender": "Female",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "2-Professionals",
+                "Income_Decile": "10 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Low",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P42",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Ireland",
+                "Age": "46 years old",
+                "Gender": "Female",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P43",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "71 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "2/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P44",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Israel",
+                "Age": "44 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "3 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "High"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P45",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Portugal",
+                "Age": "49 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "4-Clerical Support Workers",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P46",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Hungary",
+                "Age": "21 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P47",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Sweden",
+                "Age": "24 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "High"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": NaN
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P48",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Iceland",
+                "Age": "29 years old",
+                "Gender": "Male",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P49",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Switzerland",
+                "Age": "61 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "4-Clerical Support Workers",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Low",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P50",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Spain",
+                "Age": "21 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "8-Plant and Machine Operators, and Assemblers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Optimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": NaN
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P51",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Bulgaria",
+                "Age": "34 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "3 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P52",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Hungary",
+                "Age": "56 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "2/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P53",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Hungary",
+                "Age": "47 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "1/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P54",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Germany",
+                "Age": "76 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "3-Technicians and Associate Professionals",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P55",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "62 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P56",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "United Kingdom",
+                "Age": "48 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P57",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Switzerland",
+                "Age": "43 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "3/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "High",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Low",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": NaN
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P58",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Sweden",
+                "Age": "47 years old",
+                "Gender": "Male",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Low",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P59",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Cyprus",
+                "Age": "52 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P60",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "France",
+                "Age": "19 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": NaN
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P61",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Israel",
+                "Age": "50 years old",
+                "Gender": "Male",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P62",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Latvia",
+                "Age": "84 years old",
+                "Gender": "Male",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "1-Managers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P63",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Belgium",
+                "Age": "73 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P64",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "United Kingdom",
+                "Age": "61 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P65",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Hungary",
+                "Age": "16 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "3/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": NaN
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P66",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Iceland",
+                "Age": "54 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "3-Technicians and Associate Professionals",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P67",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Latvia",
+                "Age": "73 years old",
+                "Gender": "Male",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "2 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P68",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Netherlands",
+                "Age": "52 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "4-Clerical Support Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P69",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Poland",
+                "Age": "30 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "1-Managers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "3/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P70",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Sweden",
+                "Age": "80 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "High"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P71",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Italy",
+                "Age": "20 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P72",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Germany",
+                "Age": "31 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "3-Technicians and Associate Professionals",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P73",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "United Kingdom",
+                "Age": "24 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "8-Plant and Machine Operators, and Assemblers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "0/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P74",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Greece",
+                "Age": "55 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "6-Skilled Agricultural, Forestry and Fishery Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P75",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Hungary",
+                "Age": "53 years old",
+                "Gender": "Female",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "3 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P76",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Netherlands",
+                "Age": "62 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P77",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "74 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P78",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Portugal",
+                "Age": "65 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "8-Plant and Machine Operators, and Assemblers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P79",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Germany",
+                "Age": "65 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P80",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Croatia",
+                "Age": "74 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P81",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Latvia",
+                "Age": "76 years old",
+                "Gender": "Male",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "3 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": NaN
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P82",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "France",
+                "Age": "70 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P83",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Croatia",
+                "Age": "21 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "3-Technicians and Associate Professionals",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P84",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "United Kingdom",
+                "Age": "42 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P85",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Greece",
+                "Age": "57 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "3/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P86",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Italy",
+                "Age": "48 years old",
+                "Gender": "Female",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P87",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "64 years old",
+                "Gender": "Male",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P88",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "54 years old",
+                "Gender": "Male",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "5 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P89",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Montenegro",
+                "Age": "73 years old",
+                "Gender": "Female",
+                "Education": "Tertiary/Bachelor's Degree"
+            },
+            "Socio_Economics": {
+                "Occupation": "4-Clerical Support Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "10 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P90",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Cyprus",
+                "Age": "41 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "2-Professionals",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "0 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P91",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Hungary",
+                "Age": "78 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "2 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "2/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P92",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Italy",
+                "Age": "71 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "4/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Medium"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P93",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Poland",
+                "Age": "40 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "6-Skilled Agricultural, Forestry and Fishery Workers",
+                "Income_Decile": "4 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Medium",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P94",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Iceland",
+                "Age": "23 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "7-Craft and Related Trades Workers",
+                "Income_Decile": "10 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "3/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P95",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Serbia",
+                "Age": "44 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "8-Plant and Machine Operators, and Assemblers",
+                "Income_Decile": "10 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Optimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P96",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "United Kingdom",
+                "Age": "61 years old",
+                "Gender": "Male",
+                "Education": "Low (Primary/Lower Secondary)"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "4 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "3/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Low",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P97",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Hungary",
+                "Age": "25 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "9-Elementary Occupations",
+                "Income_Decile": "1 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "5 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "High",
+                "News_Frequency": "Middle",
+                "Internet_Frequency": "Often",
+                "Voter": "No"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P98",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Bulgaria",
+                "Age": "65 years old",
+                "Gender": "Male",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "5-Service and Sales Workers",
+                "Income_Decile": "3 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "3 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "5/10",
+                "Natl_Econ_View": "Pessimistic",
+                "House_Fin_View": "Pessimistic",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Low",
+                "News_Frequency": "Often",
+                "Internet_Frequency": "Often",
+                "Voter": "Yes"
+            }
+        }
+    },
+    {
+        "PROMPT_ID": "P99",
+        "PERSONA_PROFILE": {
+            "Identity": {
+                "Nationality": "Spain",
+                "Age": "47 years old",
+                "Gender": "Female",
+                "Education": "Upper Secondary/Vocational"
+            },
+            "Socio_Economics": {
+                "Occupation": "1-Managers",
+                "Income_Decile": "10 (1=Lowest, 10=Highest)",
+                "Left_Right_Position": "10 (0=Left, 10=Right)"
+            },
+            "Outlook_and_Trust": {
+                "Overall_Happiness": "10/10",
+                "Natl_Econ_View": "Middle",
+                "House_Fin_View": "Middle",
+                "Inst_Trust": "Low",
+                "Interpersonal_Trust": "Low"
+            },
+            "Information_Habit": {
+                "Political_Interest": "Middle",
+                "News_Frequency": "Rarely",
+                "Internet_Frequency": "Rarely",
+                "Voter": "Yes"
+            }
+        }
+    }
+]
