@@ -1,3 +1,4 @@
+# 이것이 리얼 #
 import pandas as pd
 import time
 import threading
