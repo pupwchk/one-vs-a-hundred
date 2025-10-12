@@ -1,5 +1,26 @@
-model_type,model_name,decision,confidence,reason,search_date
-expert,gpt-5,sell,64,"Despite record Q4 revenue, Adobe’s significantly below-expectations full-year guidance and disappointing revenue forecast triggered a stock drop and raise execution risk around its AI-driven growth narrative.",2024-12-11
-crowd_1,gpt-5-nano,sell,68,"Q4 beat but full-year guidance miss and weaker revenue forecast signal downside risk, with market reaction suggesting further downside despite near-term strength.",2024-12-11
-crowd_2,gpt-5-nano,sell,72,"Q4 beat estimates but full-year guidance misses significantly and the stock dropped on the weak forecast, suggesting downside risk despite record revenue.",2024-12-11
-crowd_3,gpt-5-nano,sell,72,"Q4 beat but full-year guidance misses and the stock fell on the weak forecast, indicating downside risk despite strong quarterly results.",2024-12-11
+symbol,search_date,prediction_date,model_type,model_name,decision,confidence,reason
+ADBE,2024-03-14,2024-03-15,expert,gpt-5,sell,68,Soft Q2 revenue guide drove a 10% drop; likely follow-through selling and estimate cuts
+ADBE,2024-03-14,2024-03-17,expert,gpt-5,sell,62,Post-earnings digestion and potential downgrades keep sentiment weak despite buyback
+ADBE,2024-03-14,2024-03-21,expert,gpt-5,buy,56,Selling pressure may fade; $25B buyback and earnings beat offer support for rebound
+ADBE,2024-03-14,2024-03-29,expert,gpt-5,buy,60,Estimates likely reset; stabilization from repurchases and mean reversion
+ADBE,2024-03-14,2024-04-13,expert,gpt-5,buy,66,Strong fundamentals plus large buyback could drive partial recovery after initial shock
+ADBE,2024-03-14,2024-03-15,crowd_1,gpt-5-nano,sell,75,Soft Q2 guidance after Q1 beat; about 10% intraday drop indicates negative near-term momentum.
+ADBE,2024-03-14,2024-03-17,crowd_1,gpt-5-nano,sell,65,Momentum likely to persist with cautious outlook; buyback provides some support but overall guidance remains weak.
+ADBE,2024-03-14,2024-03-21,crowd_1,gpt-5-nano,sell,50,"Signals are mixed; potential short-term rebound possible, but trend remains cautious."
+ADBE,2024-03-14,2024-03-29,crowd_1,gpt-5-nano,buy,60,Negative news may be priced in; buyback and brand strength could attract buyers if price stabilizes.
+ADBE,2024-03-14,2024-04-13,crowd_1,gpt-5-nano,buy,70,"With more time to digest results and ongoing buyback, long-term upside and valuation support look more favorable."
+ADBE,2024-03-14,2024-03-15,crowd_2,gpt-5-nano,sell,75,Adobe warned of soft Q2 revenue; stock fell ~10% on weaker guidance. Near-term weakness likely outweighs the Q1 beat.
+ADBE,2024-03-14,2024-03-17,crowd_2,gpt-5-nano,sell,70,Sustained negative guidance and cautious sentiment; buyback helps but may not immediately reverse the downtrend.
+ADBE,2024-03-14,2024-03-21,crowd_2,gpt-5-nano,buy,50,"Potential stabilization from the sizable buyback and past beat could create a rebound, but risk remains from ongoing weak outlook."
+ADBE,2024-03-14,2024-03-29,crowd_2,gpt-5-nano,buy,60,Medium-term value from capital return and improving sentiment could support a partial recovery; market has priced in some pessimism.
+ADBE,2024-03-14,2024-04-13,crowd_2,gpt-5-nano,buy,65,"Longer horizon may benefit from the buyback and potential earnings resilience, though the broader pessimistic outlook warrants caution."
+ADBE,2024-03-14,2024-03-15,crowd_3,gpt-5-nano,sell,78,Immediate negative catalyst: soft forecast and a ~10% drop on the news; near-term downside risk outweighs the earnings beat.
+ADBE,2024-03-14,2024-03-17,crowd_3,gpt-5-nano,sell,65,Guidance disappointment suggests continued short-term pressure and volatility before any potential rebound.
+ADBE,2024-03-14,2024-03-21,crowd_3,gpt-5-nano,sell,55,Overhang from weak guidance persists; risk-reward remains skewed to the downside in the near term.
+ADBE,2024-03-14,2024-03-29,crowd_3,gpt-5-nano,buy,60,Stock likely oversold; durable fundamentals and the $25B buyback could catalyze a rebound in the mid-term.
+ADBE,2024-03-14,2024-04-13,crowd_3,gpt-5-nano,buy,72,Valuation may be attractive after the pullback; buyback support and resilient demand underpin a longer-horizon recovery.
+ADBE,2024-03-14,2024-03-15,crowd_average,crowd_models,N/A,76.0,Average confidence across 3 crowd models
+ADBE,2024-03-14,2024-03-17,crowd_average,crowd_models,N/A,66.7,Average confidence across 3 crowd models
+ADBE,2024-03-14,2024-03-21,crowd_average,crowd_models,N/A,51.7,Average confidence across 3 crowd models
+ADBE,2024-03-14,2024-03-29,crowd_average,crowd_models,N/A,60.0,Average confidence across 3 crowd models
+ADBE,2024-03-14,2024-04-13,crowd_average,crowd_models,N/A,69.0,Average confidence across 3 crowd models

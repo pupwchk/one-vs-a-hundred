@@ -1,4 +1,5 @@
 """이벤트 발생 전 날의 시가 총액 계산 및 병합"""
+"""이 파일에 의해 news_with_market_cap_timestamp.csv이 생성됨"""
 
 import pandas as pd
 import yfinance as yf
@@ -212,4 +213,4 @@ print("\n" + "="*50)
 print("모든 작업 완료!")
 print(f"결과 파일:")
 print(f"  - CSV: {csv_output}")
-print(f"  - JSON: {json_output}")
+print(f"  - JSON: {json_output}"
